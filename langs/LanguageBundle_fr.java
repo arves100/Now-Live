@@ -76,7 +76,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"
                     + "\n\tSi vous avez besoin d'aide avec cette commande ou d'autres commandes et souhaitez poser des questions sur une langue déjà ajoutée au bot (comme le français), "
                     + "n'hésitez pas à contacter nos traducteurs dans notre serveur. Le Discord est ici : " + Const.COMMAND_PREFIX + Const.COMMAND + "discord"},
-            {"botLangSuccess", "Vous venez de changer ma langue avec succès."},
+            {"botLangSuccess", "Je parlerai désormais français."},
             {"botLangUnsupported", "Cette langue n'est pas encore supportée."},
             {"botStatistics", "%s Statistiques"},
             {"broadcasterLangAllSuccess", " :ok_hand: Je ne chercherai que des streams disponibles dans toutes les langues !"},
@@ -406,7 +406,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "* NOTE : Cela affecte toutes les annonces de streams pour Twitch\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #salonAnnonce\n\n"
                     + "* Exemples :\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #streams {Overwatch|World of "
                     + "Warcraft} (ajoute une chaîne à annoncer dans un certain salon et des filtres de jeu)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (ajoute un jeu au salon d'annonce global)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (ajoute la communauté avec un salon d'annonce spécifique)\n\t"
