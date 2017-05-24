@@ -141,6 +141,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"doesNotExist", "Cela n'a jamais été ajouté à ma base de données."},
             {"embedFull", "annonce en grand format"},
             {"embedSmall", "annonce en format compact"},
+            {"embedVideo", "announcement with a playable video"},
             {"embedNone", "annonce composée d'une petite phrase"},
             {"emptyArgs", "Je crois que tu as oublié une partie de la commande. Regarde la commande \"help\" pour plus d'infos."},
             {"emptyCommand", "La prochaine fois que tu me réveilles, envoie-moi aussi une commande."},
@@ -187,6 +188,9 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     "# REMOVE\n" +
                     "* Pour plus d'informations, tape : " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " remove help\n\n" +
+                    "# SMASHCAST\n" +
+                    "* For more information, type: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " smashcast help\n\n" +
                     "# STREAMLANG\n" +
                     "* Pour plus d'informations, tape : " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang help\n\n" +
                     "# STREAMS\n" +
@@ -218,17 +222,20 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + " invite\n\tInviter le bot NowLive dans votre serveur Discord.```"},
             {"listHelp", "```Markdown\n# LIST\n* Cette commande liste des choses de ma base de données.\n\n## UTILISATION :  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tbeamChannel     - Liste les chaînes Beam suivies"
-                    + "\n\tbeamTeam        - Liste les équipes Beam suivies"
-                    + "\n\tgfilter         - Liste tous les filtres de jeux mis en place"
-                    + "\n\tmanager         - Liste les managers du serveur"
-                    + "\n\tsetting         - Liste les paramètres communs du bot"
-                    + "\n\ttfilter         - Liste tous les filtres de titre mis en place"
-                    + "\n\ttwitchChannel   - Liste les chaînes Twitch suivies"
-                    + "\n\ttwitchCommunity - Liste les communautés Twitch suivies"
-                    + "\n\ttwitchGame      - Liste les jeux sur Twitch que je surveille"
-                    + "\n\ttwitchTeam      - Liste les équipes Twitch suivies"
-                    + "\n\tytgChannel      - Liste les chaînes YouTube Gaming suivies"
+                    + "\n\tbeamChannel      - Liste les chaînes Beam suivies"
+                    + "\n\tbeamTeam         - Liste les équipes Beam suivies"
+                    + "\n\tgfilter          - Liste tous les filtres de jeux mis en place"
+                    + "\n\tmanager          - Liste les managers du serveur"
+                    + "\n\tsetting          - Liste les paramètres communs du bot"
+                    + "\n\tsmashcastChannel - Lists the Twitch Channels you follow"
+                    + "\n\tsmashcastGame    - List the Twitch Games that I'm tracking for you"
+                    + "\n\tsmashcastTeam    - Lists the Twitch teams you follow"
+                    + "\n\ttfilter          - Liste tous les filtres de titre mis en place"
+                    + "\n\ttwitchChannel    - Liste les chaînes Twitch suivies"
+                    + "\n\ttwitchCommunity  - Liste les communautés Twitch suivies"
+                    + "\n\ttwitchGame       - Liste les jeux sur Twitch que je surveille"
+                    + "\n\ttwitchTeam       - Liste les équipes Twitch suivies"
+                    + "\n\tytgChannel       - Liste les chaînes YouTube Gaming suivies"
                     + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel```"},
             {"listSettings", "```Markdown\n" +
                     "# Paramètres du bot sur le serveur" +
@@ -289,6 +296,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"platformGameFilterAddFail", "\n# Echec de l'ajout des filtres de jeu suivant : %s."},
             {"platformGameFilterRemove", "\n# Filtre(s) de jeu supprimés : %s."},
             {"platformGameFilterRemoveFail", "\n# Echec de la suppression des filtres de jeu suivants : %s."},
+            {"platformGameNotFound", "\n #Game(s) not found: %s."},
             {"platformGameRemove", "\n# Jeu(x) supprimés : %s."},
             {"platformGameRemoveFail", "\n# Echec de la suppression des jeux suivants : %s."},
             {"platformTeamAdd", "\n# Equipes ajoutée(s) : %s."},
@@ -348,6 +356,32 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     "%CHANNEL% est en live ! Regarde le stream ici : %URL%"},// <--- Do not translate between the %
             {"shardsThis", "Numéro de fragment"},
             {"shardsTotal", "Nombre de fragments"},
+            {"smashcastChannelNotFound", "\n# Channel(s) not found on Smashcast: %s."},
+            {"smashcastHelp", "```Markdown\n# SMASHCAST\n* Add and remove things that are Smashcast.tv related.\n"
+                    + "* Notes:\n\t"
+                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
+                    + "Do NOT use the full Smashcast URL. It will not work!! Use only the channel name (www.smashcast.tv/channelName)\n\t"
+                    + "You may add multiple channels, teams, games, game and title filters by using the pipe character | between them.\n\t"
+                    + "The only required options are: channelName/teamName/gameName\n\n"
+                    + "## Smashcast Channels\n"
+                    + "Note: Adding an announcement channel, game and title filters are optional."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
+                    + "## Smashcast Games (Announce ALL live streams for that game)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game gameName #announcementChannel\n\n"
+                    + "## Smashcast Teams (Announce ALL live streams in the team)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team teamName #announcementChannel\n\n"
+                    + "## Smashcast Game Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Smashcast\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast gfilter {gameName|gameName} #announcementChannel\n\n"
+                    + "## Smashcast Title Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Smashcast\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Examples:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
+                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (adds a game to the global announcement channel)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (adds a team with a specific announcement channel)\n\n"
+                    + "```"},
             {"statusHelp", "```Markdown\n# STATUS\n* Affiche diverses statistiques du bot.\n\n## UTILISATION :  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
             {"streamlangHelp", "```Markdown\n# STREAMLANG\n* Permet de filtrer les streams par la langue dans laquelle ils sont " +
