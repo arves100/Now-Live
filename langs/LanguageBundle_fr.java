@@ -141,7 +141,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"doesNotExist", "Cela n'a jamais été ajouté à ma base de données."},
             {"embedFull", "annonce en grand format"},
             {"embedSmall", "annonce en format compact"},
-            {"embedVideo", "announcement with a playable video"},
+            {"embedVideo", "annonce avec une vidéo lisable depuis Discord"},
             {"embedNone", "annonce composée d'une petite phrase"},
             {"emptyArgs", "Je crois que tu as oublié une partie de la commande. Regarde la commande \"help\" pour plus d'infos."},
             {"emptyCommand", "La prochaine fois que tu me réveilles, envoie-moi aussi une commande."},
@@ -198,9 +198,9 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " streams help\n\n" +
                     "# TWITCH\n" +
                     "* Pour plus d'informations, tape : " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n```" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
                     "# YOUTUBE GAMING\n" +
-                    "* For more information, type: " +
+                    "* Pour plus d'informations, tape : " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ytg help\n\n" +
                     "# PATREON/DONATE\n" +
                     "Retourne le lien menant au Patreon du bot. Les commandes sont :\n" +
@@ -227,13 +227,13 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "\n\tgfilter          - Liste tous les filtres de jeux mis en place"
                     + "\n\tmanager          - Liste les managers du serveur"
                     + "\n\tsetting          - Liste les paramètres communs du bot"
-                    + "\n\tsmashcastChannel - Lists the Twitch Channels you follow"
-                    + "\n\tsmashcastGame    - List the Twitch Games that I'm tracking for you"
-                    + "\n\tsmashcastTeam    - Lists the Twitch teams you follow"
+                    + "\n\tsmashcastChannel - Liste les chaînes Smashcast suivies"
+                    + "\n\tsmashcastGame    - Liste les jeux Smashcast que je surveille"
+                    + "\n\tsmashcastTeam    - Liste les équipes Smashcast suivies"
                     + "\n\ttfilter          - Liste tous les filtres de titre mis en place"
                     + "\n\ttwitchChannel    - Liste les chaînes Twitch suivies"
                     + "\n\ttwitchCommunity  - Liste les communautés Twitch suivies"
-                    + "\n\ttwitchGame       - Liste les jeux sur Twitch que je surveille"
+                    + "\n\ttwitchGame       - Liste les jeux Twitch que je surveille"
                     + "\n\ttwitchTeam       - Liste les équipes Twitch suivies"
                     + "\n\tytgChannel       - Liste les chaînes YouTube Gaming suivies"
                     + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel```"},
@@ -357,30 +357,30 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"shardsThis", "Numéro de fragment"},
             {"shardsTotal", "Nombre de fragments"},
             {"smashcastChannelNotFound", "\n# Channel(s) not found on Smashcast: %s."},
-            {"smashcastHelp", "```Markdown\n# SMASHCAST\n* Add and remove things that are Smashcast.tv related.\n"
+            {"smashcastHelp", "```Markdown\n# SMASHCAST\n* Modifier des paramètres spécifiques à Smashcast.tv.\n"
                     + "* Notes:\n\t"
-                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Smashcast URL. It will not work!! Use only the channel name (www.smashcast.tv/channelName)\n\t"
-                    + "You may add multiple channels, teams, games, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName/gameName\n\n"
-                    + "## Smashcast Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Smashcast Games (Announce ALL live streams for that game)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game gameName #announcementChannel\n\n"
-                    + "## Smashcast Teams (Announce ALL live streams in the team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team teamName #announcementChannel\n\n"
-                    + "## Smashcast Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Smashcast\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Smashcast Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Smashcast\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "Pour ajouter des filtres de jeu et des filtres de titre, vous DEVEZ inclure les crochets.\n\t"
+                    + "N'utilisez PAS l'adresse Smashcast entière, ça ne marchera pas !! Utilisez uniquement le nom de la chaîne (www.smashcast.tv/nomChaine)\n\t"
+                    + "Vous pouvez ajouter plusieurs chaînes, équipes, jeux, filtres de jeu/titre en utilisant la barre verticale | entre eux.\n\t"
+                    + "Les seules options requises sont nomChaine/nomEquipe/nomJeu\n\n"
+                    + "## Chaînes Smashcast\n"
+                    + "Note : En ajoutant un salon pour les annonces (salonAnnonce), les filtres de jeu/titre sont optionnels."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel nomChaine #salonAnnonce {filtreJeu} [filtreTitre]\n\n"
+                    + "## Jeux Smashcast (Annoncer TOUS les lives de ce jeu)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game nomJeu #salonAnnonce\n\n"
+                    + "## Equipes Smashcast (Annoncer TOUS les lives de l'équipe')\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team nomEquipe #salonAnnonce\n\n"
+                    + "## Filtres de jeu Smashcast (Global)\n"
+                    + "* NOTE : Cela affecte toutes les annonces de streams pour Smashcast\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast gfilter {nomJeu|nomJeu} #salonAnnonce\n\n"
+                    + "## Filtres de titre Smashcast (Global)\n"
+                    + "* NOTE : Cela affecte toutes les annonces de streams pour Smashcast\n"
+                    + "* Format : " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [mot|plusieurs mots|plus de mots] #salonAnnonce\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (adds a game to the global announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (adds a team with a specific announcement channel)\n\n"
+                    + "Warcraft} (ajoute une chaîne à annoncer dans un certain salon et des filtres de jeu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (ajoute un jeu au salon d'annonce global)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (ajoute une équipe dans le salon d'annonce #instinct-streamers)\n\n"
                     + "```"},
             {"statusHelp", "```Markdown\n# STATUS\n* Affiche diverses statistiques du bot.\n\n## UTILISATION :  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
