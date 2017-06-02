@@ -22,15 +22,16 @@ Now Live is currently available in:
 * Czech
 * French
 * German
+* Greek
 * Russian
 * Spanish
 
 Now Live has the following translations in progress:
 * Dutch (NL)
 * Finnish
-* Greek
 * Italian
 * Slovak
+* Vietnamese
 
 Now Live has a partial translation in:
 * Swedish (not live, needs to be finished first)

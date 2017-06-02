@@ -26,7 +26,7 @@ import java.util.ListResourceBundle;
 /**
  * @author Veteran Software by Ague Mort
  */
-public class LanguageBundle extends ListResourceBundle {
+public class LanguageBundle_vi extends ListResourceBundle {
 
     private Object[][] contents = {
             {"added", "Added "},

@@ -276,7 +276,7 @@ public class LanguageBundle_el extends ListResourceBundle {
             {"notifyRoleUser", "# Θα κάνω @ τον %s με κάθε ανακοίνωση"},
             {"notifyTooMany", "# Μπορείς να ειδοποιείς μόνο έναν %s κάθε φορά!"},
             {"notifyMultipleUsers", " Αν θες να ειδοποιείς πολλούς χρήστες, φτίαξε ένα role και βάλε το να ειδοποιείται."},
-            {"notifyNone", " :ok_hand: Δεν θα ειδοποιώ κανέναν όταν κάνω ανακοινώσεις."}
+            {"notifyNone", " :ok_hand: Δεν θα ειδοποιώ κανέναν όταν κάνω ανακοινώσεις."},
             {"nowLive", "ΖΩΝΤΑΝΑ!\n"},
             {"nowPlayingEmbed", "Παίζει"},
             {"nowPlayingLower", " παίζει "},
