@@ -39,7 +39,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "\n\tmanager - Zmínka o uživateli znakem @ kterého chcete přidat jako manažera"
                     + "\n\n## EXAMPLE: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague"},
             {"adminOverride", "*Oprávnění tohoto příkazu byla přepsána vývojářem.*"},
-            {"alreadyExists", "Vypadá to že toto jsi již do mé databáze přidal. ¯\\_(ツ)_/¯"},
+            {"alreadyExists", "Vypadá to že toto jsi již do mé databáze přidal. ¯\_(ツ)_/¯"},
             {"alreadyManager", "Vypadá to, že jsem tohoto uživatele již přidala jako správce!"},
             {"announceHelp", "# ANNOUNCE\n* Shhh...  Jsem tajemství...\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
@@ -78,7 +78,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"},
             {"botLangSuccess", "Úspěšně jsi změnil můj jazyk."},
             {"botLangUnsupported", "Tento jazyk není momentálně podporován."},
-            {"botStatistics", "%s Statistics"},
+            {"botStatistics", "%s statistiky"},
             {"broadcasterLangAllSuccess", " :ok_hand: Budu sledovat streamy se všemi jazyky."},
             {"broadcasterLangFail", "Něco se nepovedlo a já stále sleduji streamy se všemi jazyky."},
             {"broadcasterLangSuccess", " :ok_hand: Budu sledovat pouze streamy v tomto jazyce!"},
@@ -104,16 +104,16 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "\n\tnoEmbed    - Odstraní velké vložení a použije pouze krátkou větu."
                     + "\n\tsmallEmbed - Oznamuje se vložením bez velkého bannerového obrázku."
                     + "\n\tfullEmbed  - Celé oznámení s velkým bannerovým obrázkem."
-                    + "\n\tvideoEmbed - No rich embed. Announcement will be a small code block and an embedded video " +
-                    "you can watch in Discord."
+                    + "\n\tvideoEmbed - Žádné velké oznámení. Oznámení bude malý kódový blok s vloženým videem " +
+                    "které můžete přehrát na Discordu."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed"},
             {"compactFullEmbed", " :compression: Od teď budeš dostávat celé upozornení."},
             {"compactSmallEmbed", " :compression: Od teď budeš dostávát upozornění s malým vložením."},
             {"compactNoEmbed", " :compression: Od teď bude tvoje oznámení jen krátká věta."},
-            {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
-                    "Videos will be able to be played from Discord."},
+            {"compactVideoEmbed", " :compression: Už nebudete dostávat oznámení s velkým vložením.  " +
+                    "Videa budete moci přehrávat z Discordu."},
             {"configHelp", "# CONFIG\n* Základní příkaz pro upravení mých nastavení. Zkontroluj si nápovědu pro každé nastavení pro více informací.\n\n" +
-                    "# checkPerms\n\tCheck the permissions the bot needs in a particular text channel (#discordChannel is optional)\n*\t" +
+                    "# checkPerms\n\tKontronuje oprávnění která bot potřebuje v konkrétních kanálech (#discordChannel je nepovinný)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
                     "# defaultOfflineMessage\n\tNavrátí původní offline zprávu (použito v upravovaných oznámeních)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
@@ -128,7 +128,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help\n" +
                     "# notify\n\tPoužívá se ke globálnímu nastavení oznámení na tomto serveru\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config notify help"},
-            {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
+            {"customMessageNotNull", "# Vlastní oznamovací zpráva nemůže být prázdná.  Promiň...  ¯\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% je nyní živě! Sledujte jeho stream zde: %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Resetuje mojí offline zprávu na původní.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
@@ -137,7 +137,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Zpráva od " + Const.BOT_NAME + " vývojářů:*\n\n\t"},
             {"discordChannelNoExist", "Tento textový kanál na tvém serveru neexistuje."},
-            {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
+            {"discordChannelNotNull", "# Nemůžu najít tento Discord kanál. Streamy budou oznamovány v základním kanálu."},
             {"discordLink", "Máš zájem se připojit na Now Live discord server? Je tam spoustu lidí kteří ti rádi pomohou " +
                     "pokud máš problémy! Klikni na tento odkaz:\n" + Const.DISCORD_URL},
             {"discordLinkHelp", "# Zobrazí odkaz na Now Live discord server."},
@@ -145,12 +145,12 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"doesNotExist", "To nebylo nikdy přidáno do mé databáze."},
             {"embedFull", "oznámení s celým vložením"},
             {"embedSmall", "oznámení s malým vložením"},
-            {"embedVideo", "announcement with a playable video"},
+            {"embedVideo", "oznámení s přehrávatelným videem"},
             {"embedNone", "oznámení jenom malým prohlášením a bez vložení"},
             {"emptyArgs", "Myslím si že jsi zapoměl nějaký příkaz.  Ověř si to pomocí help příkazu a zkus to znovu."},
             {"emptyCommand", "Příště až mě probudíš, tak také použij nějaký příkaz."},
             {"followersEmbed", "Sledující"},
-            {"followersEmbedYtg", "Subscribers"},
+            {"followersEmbedYtg", "Odběratelé"},
             {"guildJoinSuccess", "Ahoj!  Jsem Now Live, bot který oznamuje streamy!  Napiš `" + Const.COMMAND_PREFIX
                     + Const.COMMAND + " help` pro list mých příkazů.\n\nPokud potřebuješ pomoc s nastavením " +
                     "připoj se na můj Discord " + Const.DISCORD_URL + " a podívej se do how-to-setup a command-list " +
@@ -172,7 +172,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " compact help\n\n" +
                     "# CONFIG\n" +
-                    "* For more information, type: " +
+                    "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config help\n\n" +
                     "# INVITE\n" +
                     "* Pro více informací, napiš: " +
@@ -181,7 +181,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " list help\n\n" +
                     "# PICARTO\n" +
-                    "* For more information, type: " +
+                    "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\u200B\n" +
                     "# PING\n" +
                     "* Pro více informací, napiš: " +
@@ -190,7 +190,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " remove help\n\n" +
                     "# SMASHCAST\n" +
-                    "* For more information, type: " +
+                    "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " smashcast help\n\n" +
                     "# STREAMLANG\n" +
                     "* Pro více informací, napiš: " +
@@ -202,7 +202,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
                     "# YOUTUBE GAMING\n" +
-                    "* For more information, type: " +
+                    "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ytg help\n\n" +
                     "# PATREON/DONATE\n" +
                     "Pošle ti odkaz na náš Patreon. Příkazy jsou :\n" +
@@ -225,41 +225,31 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + " invite\n\tPozvy NowLive bota na svůj server."},
             {"listHelp", "# LIST\n* Používá se k zobrazení věcí z mé databáze.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tmixerChannel     - Lists the Mixer Channels you follow"
-                    + "\n\tmixerTeam        - Lists the Mixer Teams you follow"
+                    + "\n\tmixerChannel     - Zobrazí Vám Mixer kanály které sledujete"
+                    + "\n\tmixerTeam        - Zobrazí Vám Mixer týmy které sledujete"
                     + "\n\tgfilter          - Zobrazí Vám všechny filtry her které jste nastavil"
                     + "\n\tmanager          - Zobrazí Vám všechny moje manažery"
-                    + "\n\tpicartoChannel   - Lists the Picarto Channels you follow"
+                    + "\n\tpicartoChannel   - Zobrazí Vám Picarto kanály které sledujete"
                     + "\n\tsetting          - Zobrazí Vám všechna ostatní nastavení"
-                    + "\n\tsmashcastChannel - Lists the Smashcast Channels you follow"
-                    + "\n\tsmashcastGame    - List the Smashcast Games that I'm tracking for you"
-                    + "\n\tsmashcastTeam    - Lists the Smashcast teams you follow"
+                    + "\n\tsmashcastChannel - Zobrazí Vám Smashcast kanály které sledujete"
+                    + "\n\tsmashcastGame    - Zobrazí Vám Smashcast hry které pro Vás selduji"
+                    + "\n\tsmashcastTeam    - Zobrazí Vám Smashcast teamy které sledujete"
                     + "\n\ttfilter          - Zobrazí Vám všechny filtry názvů které jste nastavil"
                     + "\n\ttwitchChannel    - Zobrazí Vám všechny streamy které chcete abych sledoval"
-                    + "\n\ttwitchCommunity  - List the Twitch Communities you follow"
+                    + "\n\ttwitchCommunity  - Zobrazí Vám Twitch komunity které sledujete"
                     + "\n\ttwitchGame       - Zobrazí Vám všechny hry které chete abych sledoval"
                     + "\n\ttwitchTeam       - Zobrazí Vám všechny teamy které chcete abych sledoval"
-                    + "\n\tytgChannel       - Lists the YouTube Gaming Channels you follow"
+                    + "\n\tytgChannel       - Zobrazí Vám YouTube Gaming kanály které sledujete"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel"},
-            /* Please order listSettings like this then remove this comment.  NEW > Default announcement channel is: %s.
-            REMOVE THE ENGLISH listSettings AND REMOVE THE COMMENT TAGS WHEN DONE :)
-            {"listSettings", "# Bot Settings on Your Server" +
-                    "\n* Bot language is set to: %s." +
-                    "\n* Broadcaster language is set to: %s." +
-                    "\n* Cleanup is set to: %s." +
-                    "\n* Compact mode is set to: %s." +
-                    "\n* Current online announcement message format is: %s." +
-                    "\n* Current offline announcement message format is: %s." +
-                    "\n* Default announcement channel is: %s" +
-                    "\n* Notification is set to: %s."},
             {"listSettings", "# Vaše nastavení na tomto serveru" +
+			        "\n* Jazyk bota je nastaven na %s." +
+					"\n* Jazyk vysílání je nastaven na %s." +
+					"\n* Cleanup je nastaven na %s." +
                     "\n* Kompaktní mód je %s." +
-                    "\n* Notifikace jsou nastaveny na %s." +
-                    "\n* Cleanup je nastaven na %s." +
-                    "\n* Jazyk vysílání je nastaven na %s." +
-                    "\n* Jazyk bota je nastaven na %s." +
-                    "\n* Momentální online oznamovací zpráva je: %s." +
-                    "\n* Momentální offline oznamovací zpráva je: %s."},*/
+					"\n* Momentální online oznamovací zpráva je: %s." +
+					"\n* Momentální offline oznamovací zpráva je: %s." +
+					"\n* Základní kanál pro oznamování je: %s." +
+                    "\n* Notifikace jsou nastaveny na %s."},
             {"needOneManager", "Pokud ho odstraníš, kdo mě bude ovládat?"},
             {"noBotManager", "Je proti mým Discord bot zákonům aby mě ovládal bot. Promiň, zkus najít " +
                     "vhodného člověka pro tuto práci. :thumbsup:"},
@@ -269,19 +259,19 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"notifyEveryone", ":tada: WHOA!!  **EVERYONE** to patří před oznámení které bude na tomto serveru " +
                     "oznamovat streamy!  *(Jsi si jistý?  Nedoporučuji toto na velkých serverech...  Může to lidi " +
                     "rozčílit.)*"},
-            {"notifyDeprecated", "# -nl notify is deprecated no longer being used.  Please use: -nl config notify"},
+            {"notifyDeprecated", "# -nl notify bylo odstraněno a již se nepoužívá.  Prosím použij: -nl config notify"},
             {"notifyHelp", "# NOTIFY\n* Používá se ke globálnímu nastavení oznámení na tomto serveru.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " config notify <volba>"
                     + "\n\tnone     - Žádné @ notifikace! (základní)"
                     + "\n\there     - Upozorním pouze uživatele co jsou zrovna online na tomto serveru"
                     + "\n\teveryone - Upozorním VŠECHNY!!  Mwahahaha!!  (Nedoporučuji toto na velkých serverech)"
-                    + "\n\t@<role>  - I will send an @ mention for the role of your choice"
-                    + "\n\t@<user>  - Want to notify a single user?  This is the option for you!"
+                    + "\n\t@<role>  - Pošlu @ zmínku pro roly kterou jsi nastavil"
+                    + "\n\t@<user>  - Chceš upozornit pouze jednu osobu?  Toto je volba pro tebe!"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config notify everyone"},
             {"notifyHere", " :bellhop_bell: Všichni kdo jsou zrovna online na serveu dostanou upozornění."},
-            {"notifyRoleUser", "# I will @ mention %s with every announcement"},
-            {"notifyTooMany", "# You can only notify one %s at a time!"},
-            {"notifyMultipleUsers", " If you want multiple users notified, create a role and have it notified."},
+            {"notifyRoleUser", "# Pošlu @ zmínku %s s každým upozorněním"},
+            {"notifyTooMany", "# Můžeš upozornit pouze jednu %s najednou!"},
+            {"notifyMultipleUsers", " Pokud chceš upozornit více uživatelů, vytvoř si roli a upozorni ji."},
             {"notifyNone", " :ok_hand: Nebudu nikoho upozorňovat."},
             {"nowLive", "NYNÍ ŽIVĚ!\n"},
             {"nowPlayingEmbed", "Nyní hraje"},
@@ -297,24 +287,24 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"oops", "Oops!  Něco se nepovedlo a nic se nezměnilo!  Pojďme to zkusit znovu."},
             {"patreon", "Pokud chceš přispět na vývoj bota, zkus navštívit náš Patreon. https://www.patreon.com/nowlive"},
             {"patreonHelp", "# Pošle ti link na naši Patreon stránku."},
-            {"picartoChannelNotFound", "\n# Channel(s) not found on Picarto: %s."},
-            {"picartoHelp", "# PICARTO\n* Add and remove things that are Picarto channels.\n"
-                    + "* Notes:\n\t"
-                    + "To add title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Picarto URL. It will not work!! Only use the channel name (the part after picarto.tv)\n\t"
-                    + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
-                    + "Only channels are supported for now.  Picarto categories are very limited and most are grouped in a small select few.\n\t"
-                    + "The only required option is: channelName\n\u200B\n"
-                    + "## Picarto Channels\n"
-                    + "Note: Adding an announcement channel and title filters are optional.\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel channelName #announcementChannel [titleFilters]\n\n"
-                    + "## Picarto Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Picarto\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "## Picarto Stream Stats\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto stats\n\n"
-                    + "* Example:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"},
+            {"picartoChannelNotFound", "\n# Kanály nenalezeny na Picarto: %s."},
+            {"picartoHelp", "# PICARTO\n* Přidává a odebírá věci které jsou spojené s Picarto.\n"
+                    + "* Poznámky:\n\t"
+                    + "Pokud chceš přidat filtry pro názvy, MUSÍ obsahovat závorky.\n\t"
+                    + "Nepoužívej celý Picarto odkaz. Nebude to fungovat!! Používej pouze název kanálu (ta část za picarto.tv)\n\t"
+                    + "Můžeš přidávat více kanálů a filtrů názvů pokud mezi ně dáš tento znak |.\n\t"
+                    + "Pro teď jsou podporovány jen kanály. Kategorie Picarta jsou velmi omezené a většina z nich je seskupena do několika málo vybraných.\n\t"
+                    + "Jediná požadovaná možnost je: názevKanálu\n\u200B\n"
+                    + "## Picarto kanály\n"
+                    + "Poznámka: Přidání oznamovacího kanálu a filtru názvů je libovolné.\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel názevKanálu #oznamovacíKanál [filtryNázvů]\n\n"
+                    + "## Picarto filtry názvů (Globální)\n"
+                    + "* Poznámka: Toto ovlivňuje všechna oznámení z Picarta\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [slova|jiná slova|více slov] #oznamovacíKanál\n\n"
+                    + "## Picarto Stream staty\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto stats\n\n"
+                    + "* Příklady:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (přidává oznamovací kanál)\n\t"},
             {"ping", "Když jsem byl v Číně v All-American Ping Pong teamu, miloval jsem hrát ping-pong s mojí " +
                     "Flexolite ping pong pálkou."},
             {"pingHelp", "```Markdown\n# PING\n* Používá se aby jsi mě mohl pingnout. Pokud správně funguji, pošlu ti zpětnou zprávu.\n\n## USAGE: "
@@ -335,7 +325,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"platformGameFilterAddFail", "\n# Nepodařilo se přidat filtry pro hry: %s."},
             {"platformGameFilterRemove", "\n# Odebrané filtry pro hry: %s."},
             {"platformGameFilterRemoveFail", "\n# Nepodařilo se odebrat filtry pro hry: %s."},
-            {"platformGameNotFound", "\n #Game(s) not found: %s."},
+            {"platformGameNotFound", "\n #Hry nenalezeny: %s."},
             {"platformGameRemove", "\n# Odebrané hry: %s."},
             {"platformGameRemoveFail", "\n# Nepodařilo se odebrat hry: %s."},
             {"platformTeamAdd", "\n# Přidány týmy: %s."},
@@ -363,14 +353,14 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"setDefaultAnnounceChannelDoNotOwnChannel", "# Hej, ale nemůžu oznamovat v kanálu který na tvém serveru " +
                     "neexistuje!"},
             {"setDefaultAnnounceChannelFail", "# Nedaří se mi tam odeslat oznámení.  Ujisti se že tam mám správná práva."},
-            {"setDefaultAnnounceChannelHelp", "# SET DEFAULT ANNOUNCE CHANNEL\n* Set the default announcement channel.\n\n## USAGE:  "
+            {"setDefaultAnnounceChannelHelp", "# SET DEFAULT ANNOUNCE CHANNEL\n* Nastaví základní oznamovací kanál.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " config setDefaultAnnounceChannel <channel>\n\t"
-                    + "<channel> - The name of the channel you wish to be your default(MUST include the #)\n"
-                    + "This option only applies if you have not set a specific announce channel in the Twitch command."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordchannel"},
-            {"setDefaultAnnounceChannelSuccess", "# Default announcement channel set to: %s."},
+                    + "<channel> - Jméno kanálu který chcete aby byl nastaven jako základní(MUSÍ obsahovat #)\n"
+                    + "Toto platí pouze pokud jsi nenastavil oznamovací kanál při zadávání příkazu"
+                    + "\n\n## PŘÍKLAD:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordchannel"},
+            {"setDefaultAnnounceChannelSuccess", "# Základní oznamovací kanál nastaven na: %s."},
             {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Nastav vlastní offline zprávu pro offline oznamování.\n\n" +
                     "## Dostupné žetony k použití ve vaší zprávě:\n" +
                     "\t* %CHANNEL%   - Název kanálu\n" +
@@ -395,34 +385,34 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "%CHANNEL% je nyní živě! Sledujte jeho stream zde: %URL%"},// <--- Do not translate between the %
             {"shardsThis", "Číslo střepu"},
             {"shardsTotal", "Počet střepů"},
-            {"smashcastChannelNotFound", "\n# Channel(s) not found on Smashcast: %s."},
-            {"smashcastHelp", "# SMASHCAST\n* Add and remove things that are Smashcast.tv related.\n"
-                    + "* Notes:\n\t"
-                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Smashcast URL. It will not work!! Use only the channel name (www.smashcast.tv/channelName)\n\t"
-                    + "You may add multiple channels, teams, games, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName/gameName\n\u200B\n"
-                    + "## Smashcast Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional.\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Smashcast Games (Announce ALL live streams for that game)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game gameName #announcementChannel\n\n"
-                    + "## Smashcast Teams (Announce ALL live streams in the team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team teamName #announcementChannel\n\n"
-                    + "## Smashcast Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Smashcast\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Smashcast Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Smashcast\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "## Smashcast Stream Stats\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast stats\n\n"
-                    + "* Examples:\n\t"
+            {"smashcastChannelNotFound", "\n# Kanály nenalezeny na Smashcast: %s."},
+            {"smashcastHelp", "# SMASHCAST\n* Přidává a odebírá věci které jsou spojené s Smashcast.tv.\n"
+                    + "* Ponámky:\n\t"
+                    + "Pokud chceš přidat filtry pro hry a názvy, MUSÍ obsahovat závorky.\n\t"
+                    + "Nepoužívej celý Smashcast odkaz. Nebude to fungovat!! Používej pouze název kanálu (www.smashcast.tv/názevKanálu)\n\t"
+                    + "Můžeš přidávat více kanálů, teamů, her, filtrů her a názvů pokud mezi ně dáš tento znak |.\n\t"
+                    + "Jediné požadované možnosti jsou: názevKanálu/názevTýmu/názevHry\n\u200B\n"
+                    + "## Smashcast Kanály\n"
+                    + "Poznámka: Přidání oznamovacího kanálu, filtrů her a názvů je volitelné.\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
+                    + "## Smashcast hry (Oznamuje všechna živá vysílání z hry)\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game gameName #announcementChannel\n\n"
+                    + "## Smashcast Týmy (Oznamuje všechna živá vysílání z týmu)\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team teamName #announcementChannel\n\n"
+                    + "## Smashcast filtry her (Globální)\n"
+                    + "* POZNÁMKA: Toto ovlivňuje všechna oznámení z Smashcastu\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast gfilter {gameName|gameName} #announcementChannel\n\n"
+                    + "## Smashcast filtry kanálů (Globální)\n"
+                    + "* POZNÁMKA: Toto ovlivňuje všechna oznámení z Smashcastu\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "## Smashcast Stream staty\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast stats\n\n"
+                    + "* Příklady:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (adds a game to the global announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (adds a team with a specific announcement channel)"},
-            {"staffOverride", "*Permission of this command have been overridden by a member of the bot staff.*"},
+                    + "Warcraft} (přidává kanál aby byl oznámen v #live-streams a také přidává filter her)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (přidává filtr hry do globálního oznamovacího kanálu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (přidává tým se specifickým oznamovacím kanálem)"},
+            {"staffOverride", "*Povolení tohoto příkazu bylo přepsáno členem personálu.*"},
             {"statusHelp", "# STATUS\n* Zobrazí různé statistiky bota.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status"},
             {"streamlangHelp", "# STREAMLANG\n* Povolí vám filtrovat streamy podle jazyka " +
@@ -456,7 +446,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "Pokud chceš přidat filtry pro hry a názvy, MUSÍ obsahovat závorky.\n\t"
                     + "Nepoužívej celý Twtich odkaz. Nebude to fungovat!! Používej pouze název kanálu (www.twitch.tv/názevKanálu)\n\t"
                     + "Název týmu musí vycházet z odkazu, ne ze zobrazeného názvu. (www.twitch.tv/team/názevTýmu)\n\t"
-                    + "Můžeš přidávat více kanálů, teamů, her, komunit, her a názvů pokud mezi ně dáš tento znak |.\n\t"
+                    + "Můžeš přidávat více kanálů, teamů, her, komunit, filtrů her a názvů pokud mezi ně dáš tento znak |.\n\t"
                     + "Jediné požadované možnosti jsou: názevKanálu/názevKomunity/názevTýmu/názevHry\n\u200B\n"
                     + "## Twtich kanály\n"
                     + "Poznámka: Přidání oznamovacího kanálu, filtrů her a názvů je volitelné.\n"
@@ -474,7 +464,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "* Poznámka: Toto ovlivňuje všechna oznámení z Twtiche\n"
                     + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #oznamovacíKanál\n\n"
                     + "## Twitch Stream Stats\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\u200B\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\u200B\n"
                     + "* Příklady:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (přidává kanál aby byl oznámen v #live-streams a také přidává filter her)\n\t"
@@ -493,25 +483,25 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` pro více informací."},
             {"watchThemHere", "Sledujte jej zde: "},
             {"wrongCommand", " :thinking: Neznám tento příkaz."},
-            {"ytgChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."},
-            {"ytgHelp", "# YTG\n* Add and remove things that are YouTube Gaming channels.\n"
-                    + "* Notes:\n\t"
-                    + "To add title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full YouTube Gaming URL. It will not work!! Only use the channel's display name (as shows under their live stream)\n\t"
-                    + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
-                    + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands.\n\t"
-                    + "Game filters are NOT a thing with YouTube.  See the above note about the API.\n\t"
-                    + "The only required options is: channelName\n\u200B\n"
-                    + "## YouTube Gaming Channels\n"
-                    + "Note: Adding an announcement channel and title filters are optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
-                    + "## YouTube Gaming Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for YouTube Gaming\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "## YouTube Gaming Stream Stats\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg stats\n\n"
-                    + "* Examples:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"}
+            {"ytgChannelNotFound", "\n# Kanály nenalezeny na YouTube Gaming: %s."},
+            {"ytgHelp", "# YTG\n*Přidává a odebírá věci které jsou spojené s Youtube Gaming.\n"
+                    + "* Poznámky:\n\t"
+                    + "Pokud chceš přidat filtry pro názvy, MUSÍ obsahovat závorky.\n\t"
+                    + "Nepoužívej celý Twtich odkaz. Nebude to fungovat!! Používej pouze název kanálu (jak se ukazuje pod jejich vysíláním)\n\t"
+                    + "Můžeš přidávat více kanálů a filtrů názvů pokud mezi ně dáš tento znak |.\n\t"
+                    + "Nyní jsou podporovány pouze kanály.  Rozhraní YouTube API nezobrazuje správné jméno hry, které se má používat, jako u jiných příkazů.\n\t"
+                    + "Filtry her nejsou podporovány na YouTube.  Podívej se na poznámku o API nahoře.\n\t"
+                    + "Jediná požadovaná možnostt je: názevKanálu\n\u200B\n"
+                    + "## YouTube Gaming Kanály\n"
+                    + "Poznámka: Přidání oznamovacího kanálu a filtrů názvů je volitelné."
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
+                    + "## YouTube Gaming filtry názvů (Globální)\n"
+                    + "* POZNÁMKA: Toto ovlivňuje všechna oznámení z Youtube Gamingu\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "## YouTube Gaming Stream Staty\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg stats\n\n"
+                    + "* Příklady:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (přidává kanál pro upozornění)\n\t"}
     };
 
     @Override
