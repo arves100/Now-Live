@@ -454,62 +454,62 @@ public class LanguageBundle extends ListResourceBundle {
                     + "Để thêm bộ lọc trò chơi và bộ lọc tiêu đề, bạn PHẢI bao gồm dấu ngoặc.\n\t"
                     + "KHÔNG sử dụng URL Twitch đầy đủ. Nó sẽ không làm việc!! Chỉ sử dụng tên kênh (www.twitch.tv/channelName)\n\t"
                     + "Tên Nhóm phải từ URL, chứ không phải tên hiển thị của nhóm. (www.twitch.tv/team/teamName)\n\t"
-                    + "You may add multiple channels, teams, games, communities, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/communityName/teamName/gameName\n\u200B\n"
-                    + "## Twitch Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional."
+                    + "Bạn có thể thêm nhiều kênh, nhóm, trò chơi, cộng đồng, bộ lọc trò chơi và tiêu đề bằng cách sử dụng ký tự đường ống | giữa họ.\n\t"
+                    + "Các lựa chọn chỉ được yêu cầu là: channelName/communityName/teamName/gameName\n\u200B\n"
+                    + "## Kênh twitch\n"
+                    + "Lưu ý: Thêm kênh thông báo, bộ lọc trò chơi và tiêu đề là tùy chọn."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Twitch Communities (Announce ALL live streams in the community)\n"
+                    + "## Cộng đồng Twitch (Thông báo TẤT CẢ các tuyến sống trong cộng đồng)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community communityName #announcementChannel\n\n"
-                    + "## Twitch Games (Announce ALL live streams for that game)\n"
+                    + "## Trò chơi Twitch (Thông báo TẤT CẢ các tuyến sống cho trò chơi đó)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game gameName #announcementChannel\n\n"
-                    + "## Twitch Teams (Announce ALL live streams in the team)\n"
+                    + "## Các đội Twitch (Thông báo TẤT CẢ các dòng trực tuyến trong nhóm)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team teamName #announcementChannel\n\n"
-                    + "## Twitch Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Twitch\n"
+                    + "## Bộ lọc trò chơi Twitch (Toàn cầu)\n"
+                    + "* Chú ý: Điều này ảnh hưởng đến tất cả các thông báo dòng cho Twitch\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Twitch Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Twitch\n"
+                    + "## Bộ lọc tiêu đề Twitch (Toàn cầu)\n"
+                    + "* Chú ý: Điều này ảnh hưởng đến tất cả các thông báo dòng cho Twitch\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "## Twitch Stream Stats\n"
+                    + "## Thống kê Stream Twitch\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (adds a game to the global announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (adds the community with a specified announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (adds a team with a specific announcement channel)"},
-            {"twitchTeams", "Twitch Teams"},
-            {"typeOnce", "You only need to type that part once, silly."},
-            {"uniqueChannels", "Unique Channels %s"},
-            {"uniqueGames", "Unique Games %s"},
-            {"updateAnnounceMessageFail", "# Something went wrong and the announcement message was not changed."},
-            {"updateAnnounceMessageSuccess", "# You've updated the announcement message!  It now uses the format:\n\n* %s"},
-            {"updateOfflineMessageFail", "# Something went wrong and the offline message was not changed."},
-            {"updateOfflineMessageSuccess", "# You've updated the offline message!  It now uses the format:\n\n* %s"},
-            {"usePlatform", "Oops!  That's the old way of doing things!  Use the platform specific command!  Type `" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " help` for more info."},
-            {"watchThemHere", "Watch them here: "},
-            {"wrongCommand", " :thinking: I don't know that command."},
-            {"ytgChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."},
-            {"ytgHelp", "# YTG\n* Add and remove things that are YouTube Gaming channels.\n"
+                    + "Warcraft} (Thêm kênh để thông báo trong kênh và bộ lọc trò chơi nhất định)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (Thêm một trò chơi vào kênh thông báo toàn cầu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (Thêm cộng đồng với một kênh thông báo đã chỉ định)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (Thêm một nhóm với một kênh thông báo cụ thể)"},
+            {"twitchTeams", "Các đội Twitch"},
+            {"typeOnce", "Bạn chỉ cần gõ đoạn đó một lần, ngớ ngẩn."},
+            {"uniqueChannels", "Kênh duy nhất %s"},
+            {"uniqueGames", "Trò chơi độc đáo %s"},
+            {"updateAnnounceMessageFail", "# Đã xảy ra sự cố và thông báo tuyên bố không thay đổi."},
+            {"updateAnnounceMessageSuccess", "# Bạn đã cập nhật thông báo! Nó bây giờ sử dụng định dạng:\n\n* %s"},
+            {"updateOfflineMessageFail", "# Đã xảy ra sự cố và thông báo ngoại tuyến không thay đổi."},
+            {"updateOfflineMessageSuccess", "# Bạn đã cập nhật tin nhắn offline! Nó bây giờ sử dụng định dạng:\n\n* %s"},
+            {"usePlatform", "Oops!  Đó là cách làm việc cũ! Sử dụng lệnh nền tảng cụ thể! Kiểu `" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " Giúp đỡ` để biết thêm thông tin."},
+            {"watchThemHere", "Xem chúng ở đây: "},
+            {"wrongCommand", " :thinking: Tôi không biết lệnh đó."},
+            {"ytgChannelNotFound", "\n# (Các) kênh không tìm thấy trên Trò chơi trên YouTube: %s."},
+            {"ytgHelp", "# YTG\n* Thêm và xóa những thứ là các kênh Trò chơi trên YouTube.\n"
                     + "* Notes:\n\t"
-                    + "To add title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full YouTube Gaming URL. It will not work!! Only use the channel's display name (as shows under their live stream)\n\t"
-                    + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
-                    + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands.\n\t"
-                    + "Game filters are NOT a thing with YouTube.  See the above note about the API.\n\u200B\n"
-                    + "The only required option is: channelName\n\n"
-                    + "## YouTube Gaming Channels\n"
-                    + "Note: Adding an announcement channel and title filters are optional."
+                    + "Để thêm bộ lọc tiêu đề, bạn PHẢI bao gồm dấu ngoặc.\n\t"
+                    + "KHÔNG sử dụng URL của YouTube Gaming đầy đủ. Nó sẽ không làm việc!! Chỉ sử dụng tên hiển thị của kênh (như hiển thị dưới luồng trực tuyến của họ)\n\t"
+                    + "Bạn có thể thêm nhiều kênh và các tiêu đề bộ lọc bằng cách sử dụng các ký tự đường ống | giữa họ.\n\t"
+                    + "Chỉ bây giờ các kênh được hỗ trợ. API YouTube không hiển thị đúng tên trò chơi sẽ được sử dụng như trong các lệnh khác.\n\t"
+                    + "Bộ lọc trò chơi KHÔNG phải là một điều với YouTube. Xem lưu ý ở trên về API.\n\u200B\n"
+                    + "Tùy chọn chỉ được yêu cầu là: channelName\n\n"
+                    + "## Kênh trò chơi trên YouTube\n"
+                    + "Lưu ý: Thêm kênh thông báo và bộ lọc tiêu đề là tùy chọn."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
-                    + "## YouTube Gaming Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for YouTube Gaming\n"
+                    + "## Bộ lọc tiêu đề trên YouTube (Toàn cầu)\n"
+                    + "* LƯU Ý: Điều này ảnh hưởng đến tất cả các thông báo về luồng cho YouTube Gaming\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "## YouTube Gaming Stream Stats\n"
+                    + "## Số liệu thống kê trên YouTube về luồng chơi\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg stats\n\n"
                     + "* Example:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"}
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (Thêm một kênh để thông báo trong một kênh nhất định)\n\t"}
     };
 
     @Override
