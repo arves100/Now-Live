@@ -29,487 +29,487 @@ import java.util.ListResourceBundle;
 public class LanguageBundle_vi extends ListResourceBundle {
 
     private Object[][] contents = {
-            {"added", "Added "},
-            {"addFail", "Failed to add "},
-            {"addHelp", "# ADD\n* Used to add managers for your server.\n\n## USAGE:  "
+            {"added", "Thêm "},
+            {"addFail", "Không thể thêm "},
+            {"addHelp", "# ADD\n* Được sử dụng để thêm người quản lý cho máy chủ của bạn.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " add <option> <content>"
                     + "\n\t<option> <content>"
-                    + "\n\tmanager - The @ mention of the user to add as a manager"
+                    + "\n\tmanager - Đề cập đến của người sử dụng để thêm như là một người quản lý"
                     + "\n\n## EXAMPLE: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague"},
-            {"adminOverride", "*Permission of this command have been overridden by a developer.*"},
-            {"alreadyExists", "It looks like you already added that to my database. ¯\\_(ツ)_/¯"},
-            {"alreadyManager", "It seems I've already hired that user as a manager.  Find moar humanz!"},
-            {"announceHelp", "# ANNOUNCE\n* Shhh...  I'm a secret...\n\n## USAGE:  "
+            {"adminOverride", "*Sự cho phép của lệnh này đã bị ghi đè bởi một nhà phát triển.*"},
+            {"alreadyExists", "Dường như bạn đã thêm vào cơ sở dữ liệu của tôi. ¯\\_(ツ)_/¯"},
+            {"alreadyManager", "Có vẻ như tôi đã thuê người dùng đó làm người quản lý. Tìm moar humanz!"},
+            {"announceHelp", "# ANNOUNCE\n* Shhh...  Tôi là một bí mật...\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " announce <content>\n\tThis command is only available to the developers."},
-            {"mixerChannelNotFound", "\n# Channel(s) not found on Mixer: %s."},
-            {"mixerHelp", "# MIXER\n* Add and remove things that are Mixer.com related.\n"
-                    + "* Notes:\n\t"
+                    + " announce <content>\n\tLệnh này chỉ có sẵn cho các nhà phát triển."},
+            {"mixerChannelNotFound", "\n# (Các) kênh không tìm thấy trên Máy trộn: %s."},
+            {"mixerHelp", "# MIXER\n* Thêm và xóa những thứ có liên quan đến Mixer.com.\n"
+                    + "* Ghi chú:\n\t"
                     + "Để thêm bộ lọc trò chơi và bộ lọc tiêu đề, bạn PHẢI bao gồm dấu ngoặc đơn.\n\t"
                     + "KHÔNG sử dụng URL của Trình trộn đầy đủ. Nó sẽ không làm việc!! Chỉ sử dụng tên kênh (www.mixer.com/channelName)\n\t"
                     + "Bạn có thể thêm nhiều kênh, đội, trò chơi và tiêu đề bộ lọc bằng cách sử dụng các ký tự đường ống | giữa họ.\n\t"
                     + "Các tùy chọn được yêu cầu duy nhất là: channelName/teamName\n\u200B\n"
-                    + "## Mixer Channels\n"
-                    + "Note: Thêm kênh thông báo, bộ lọc trò chơi và tiêu đề là tùy chọn.\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Mixer Teams (Announce ALL live streams in the team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team teamName #announcementChannel\n\n"
-                    + "## Mixer Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Mixer\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Mixer Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Mixer\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "## Mixer Kênh\n"
+                    + "chú thích: Thêm kênh thông báo, bộ lọc trò chơi và tiêu đề là tùy chọn.\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel kênhName #Kênh thông báo {gameFilters} [titleFilters]\n\n"
+                    + "## Nhóm Mixer (Thông báo TẤT CẢ các dòng trực tiếp trong nhóm)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team Tên nhóm #Kênh thông báo\n\n"
+                    + "## Bộ lọc trò chơi trộn (toàn cầu)\n"
+                    + "* LƯU Ý: Điều này ảnh hưởng đến tất cả các thông báo luồng cho Mixer\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {tên của trò chơi|tên của trò chơi} #Kênh thông báo\n\n"
+                    + "## Bộ lọc tiêu đề của Mixer (Toàn cầu)\n"
+                    + "* LƯU Ý: Điều này ảnh hưởng đến tất cả các thông báo luồng cho Mixer\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [Từ|Những từ khác|nhiều từ ngữ hơn] #Kênh thông báo\n\n"
                     + "## Mixer Stream Stats\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer stats\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
-            {"botLangFail", "Something went wrong and my language is still the same."},
-            {"botLangHelp", "# BOTLANG\n* Used to change the language of my responses.\n\n## USAGE: "
+                    + "Warcraft} (Thêm kênh để thông báo trong kênh và bộ lọc trò chơi nhất định)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (Thêm một nhóm với một kênh thông báo cụ thể)\n\n"},
+            {"botLangFail", "Đã xảy ra lỗi và ngôn ngữ của tôi vẫn như cũ."},
+            {"botLangHelp", "# BOTLANG\n* Được sử dụng để thay đổi ngôn ngữ của câu trả lời của tôi.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " botlang language"
-                    + "\n\tEnter either the English spelling or the native spelling of the language you wish to set."
+                    + " Ngôn ngữ botlang"
+                    + "\n\tNếu có chính tả tiếng Anh hoặc cách đánh vần bản xứ của ngôn ngữ mà bạn muốn thiết lập."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"
-                    + "\n\tIf you need further help with this command or others outside of what our help commands do and you wish to ask questions in a language currently associated "
-                    + "with the bot please feel free to reach out to our translators in our Discord for assistance. Discord is at " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
-            {"botLangSuccess", "You've successfully changed my language."},
-            {"botLangUnsupported", "That language is currently not supported."},
+                    + "\n\tIf Bạn cần trợ giúp thêm với lệnh này hoặc những người khác bên ngoài những gì mà lệnh giúp đỡ của chúng tôi làm và bạn muốn đặt các câu hỏi bằng một ngôn ngữ hiện đang được liên kết "
+                    + "Với bot xin vui lòng liên hệ với các dịch giả của chúng tôi trong Discord của chúng tôi để được hỗ trợ. Bất đồng ở " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
+            {"botLangSuccess", "Bạn đã thay đổi thành công ngôn ngữ của mình."},
+            {"botLangUnsupported", "Ngôn ngữ đó hiện không được hỗ trợ."},
             {"botStatistics", "%s Statistics"},
-            {"broadcasterLangAllSuccess", " :ok_hand: I'll look for streams from all languages."},
-            {"broadcasterLangFail", "Something went wrong and I'm still looking for all languages."},
-            {"broadcasterLangSuccess", " :ok_hand: I'll only look for streams that are in that language!"},
-            {"canNotRemoveOwner", "Silly human, you can't remove the server owner from the manager list. :laughing: " +
+            {"broadcasterLangAllSuccess", " :ok_hand: Tôi sẽ tìm kiếm các luồng từ tất cả các ngôn ngữ."},
+            {"broadcasterLangFail", "Đã xảy ra lỗi và tôi vẫn đang tìm kiếm tất cả ngôn ngữ."},
+            {"broadcasterLangSuccess", " :ok_hand: Tôi sẽ chỉ tìm kiếm các luồng trong ngôn ngữ đó!"},
+            {"canNotRemoveOwner", "Nhân loại ngớ ngẩn, bạn không thể xóa chủ sở hữu máy chủ khỏi danh sách người quản lý. :laughing: " +
                     ":laughing:"},
-            {"cleanupFail", "Ah, man...  Something went wrong... Better try that again."},
-            {"cleanupHelp", "# CLEANUP\n*  Change the way I clean up my stream announcements.\n\n## USAGE:"
+            {"cleanupFail", "Ah, người đàn ông ... Có chuyện gì đó đã xảy ra ... Tốt hơn nữa hãy thử lại lần nữa."},
+            {"cleanupHelp", "# CLEANUP\n*  Thay đổi cách tôi làm sạch thông báo luồng của tôi.\n\n## USAGE:"
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " cleanup <option>"
-                    + "\n\tnone   - I won't change a thing to my announcements! (default)"
-                    + "\n\tedit   - I'll edit my announcements to say \"OFFLINE\" when the streamer goes offline"
-                    + "\n\tdelete - I'll just delete the announcement when the streamer is no longer live"
+                    + "\n\tnone   - Tôi sẽ không thay đổi một điều để thông báo của tôi! (mặc định)"
+                    + "\n\tedit   - Tôi sẽ chỉnh sửa thông báo của mình để nói \"OFFLINE\" khi trình lên sóng ngoại tuyến"
+                    + "\n\tdelete - Tôi sẽ chỉ xóa thông báo khi streamer không còn sống nữa"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit"},
-            {"cleanupSuccessDelete", "Sir, yes Sir!  I will delete all my announcements from now on!"},
-            {"cleanupSuccessEdit", "Editing my announcements, it is."},
-            {"cleanupSuccessNone", " :ok_hand: I won't do anything to my announcements."},
-            {"compactFail", "Um, something went wrong.  My compact mode is unchanged."},
-            {"compactHelp", "# COMPACT\n* Switch my announcements to a shorter version.\n\n## USAGE: "
+            {"cleanupSuccessDelete", "Vâng thưa ngài! Tôi sẽ xóa mọi thông báo của tôi từ bây giờ!"},
+            {"cleanupSuccessEdit", "Chỉnh sửa thông báo của tôi, đó là."},
+            {"cleanupSuccessNone", " :ok_hand: Tôi sẽ không làm bất cứ điều gì để thông báo của tôi."},
+            {"compactFail", "Um, có gì đó sai trái. Chế độ nhỏ gọn của tôi không thay đổi."},
+            {"compactHelp", "# COMPACT\n* Chuyển các thông báo của tôi sang một phiên bản ngắn hơn.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\tnoEmbed    - Removes the large embed and only uses a short sentence."
-                    + "\n\tsmallEmbed - Announces with an embed with no large banner image."
-                    + "\n\tfullEmbed  - The full announcement with large banner image."
+                    + "\n\tnoEmbed    - Loại bỏ nhúng lớn và chỉ sử dụng một câu ngắn."
+                    + "\n\tsmallEmbed - Thông báo với nhúng không có hình ảnh biểu ngữ lớn."
+                    + "\n\tfullEmbed  - Thông báo đầy đủ với hình ảnh biểu ngữ lớn."
                     + "\n\tvideoEmbed - No rich embed. Announcement will be a small code block and an embedded video " +
                     "you can watch in Discord."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed"},
-            {"compactFullEmbed", " :compression: You will get the full announcement from now on."},
-            {"compactSmallEmbed", " :compression: You will get an announcement with a small embed from now on."},
-            {"compactNoEmbed", " :compression: Your announcements will only be a short sentence from now on."},
+            {"compactFullEmbed", " :compression: Bạn sẽ nhận được thông báo đầy đủ từ bây giờ."},
+            {"compactSmallEmbed", " :compression: Bạn sẽ nhận được một thông báo với một nhúng nhỏ từ bây giờ."},
+            {"compactNoEmbed", " :compression: Thông báo của bạn sẽ chỉ là một câu ngắn từ bây giờ."},
             {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
                     "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* The base command to set my various settings. Check each specific settings help for more info.\n\n" +
                     "# checkPerms\n\tCheck the permissions the bot needs in a particular text channel (#discordChannel is optional)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
-                    "# defaultOfflineMessage\n\tReturns the offline message to the default (used in edited announcements)\n*\t" +
+                    "# defaultOfflineMessage\n\Trả lại thư ngoại tuyến thành mặc định (được sử dụng trong thông báo được chỉnh sửa)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
-                    "# defaultOnlineMessage\n\tReturns the announcement message to the default (used in all announcements)\n*\t" +
+                    "# defaultOnlineMessage\n\Trả lại thông báo thông báo về mặc định (được sử dụng trong tất cả các thông báo)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "# setDefaultAnnounceChannel\n\tSet the default announcement channel\n\t" +
-                    "(Where it announces when you don't include a specific Discord channel when adding streams)\n*\t" +
+                    "# setDefaultAnnounceChannel\n\Đặt kênh thông báo mặc định\n\t" +
+                    "(Trường hợp nó thông báo khi bạn không bao gồm một kênh Discord cụ thể khi thêm các luồng)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
-                    "# setOfflineMessage\n\tSet a custom offline message (used in edited announcements)\n*\t" +
+                    "# setOfflineMessage\n\Đặt một tin nhắn ngoại tuyến tùy chỉnh (được sử dụng trong thông báo được chỉnh sửa)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
-                    "# setOnlineMessage\n\tSet a custom announcement message (used in all announcements)\n*\t" +
+                    "# setOnlineMessage\n\Đặt một thông báo thông báo tùy chỉnh (sử dụng trong tất cả các thông báo)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help\n" +
-                    "# notify\n\tUsed to change the global notification option for this server.\n*\t" +
+                    "# notify\n\Được sử dụng để thay đổi tùy chọn thông báo toàn cầu cho máy chủ này.\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config notify help"},
             {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
-            {"defaultAnnounceMessage", "%CHANNEL% has just gone live! Watch their stream here: %URL%"},
-            {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Reset my offline message to the default.\n\n" +
+            {"defaultAnnounceMessage", "%CHANNEL% Đã ra đi! Xem luồng của họ ở đây: %URL%"},
+            {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Đặt lại tin nhắn ngoại tuyến của tôi về mặc định.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
-            {"defaultOfflineMessage", "%CHANNEL% is no longer live!  Sorry, you missed them this time."},
-            {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Reset my online message to the default.\n\n" +
+            {"defaultOfflineMessage", "%CHANNEL% Không còn sống nữa! Xin lỗi, bạn đã nhớ họ lần này."},
+            {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Đặt lại tin nhắn trực tuyến của tôi về mặc định.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Message from the " + Const.BOT_NAME + " developers:*\n\n\t"},
-            {"discordChannelNoExist", "That text channel doesn't exist on your server."},
-            {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
+            {"discordChannelNoExist", "Đặt lại các tin nhắn trực tuyến về cài đặt mặc định."},
+            {"discordChannelNotNull", "# Tôi không thể tìm thấy kênh văn bản Discord. Luồng sẽ được công bố trong kênh mặc định."},
             {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
-                    "having problems! Click this link:\n" + Const.DISCORD_URL},
-            {"discordLinkHelp", "# Displays the link to join the Now Live Discord server."},
-            {"discordUserNoExist", "That person isn't a Discord user!  Try again!"},
-            {"doesNotExist", "That was never added to my database."},
-            {"embedFull", "announcement with a full size embed"},
-            {"embedSmall", "announce with a small embed"},
-            {"embedVideo", "announcement with a playable video"},
-            {"embedNone", "announce with a just a small statement and no embed"},
-            {"emptyArgs", "I think you forgot some of the command.  Check the help command for more info."},
-            {"emptyCommand", "Next time you wake me up, please send a command as well."},
-            {"followersEmbed", "Followers"},
-            {"followersEmbedYtg", "Subscribers"},
-            {"guildJoinSuccess", "Hi there!  I'm Now Live, the stream announcing bot!  Type `" +
+                    "Có vấn đề! Nhấp vào liên kết này:\n" + Const.DISCORD_URL},
+            {"discordLinkHelp", "# Hiển thị liên kết để tham gia máy chủ Không xác thực trực tuyến."},
+            {"discordUserNoExist", "Người đó không phải là người sử dụng Bất hòa! Thử lại!"},
+            {"doesNotExist", "Điều đó không bao giờ được thêm vào cơ sở dữ liệu của tôi."},
+            {"embedFull", "Thông báo với nhúng kích thước đầy đủ"},
+            {"embedSmall", "Thông báo với một nhúng nhỏ"},
+            {"embedVideo", "Thông báo với một video có thể phát"},
+            {"embedNone", "Công bố chỉ với một tuyên bố nhỏ và không nhúng"},
+            {"emptyArgs", "Tôi nghĩ rằng bạn quên một số lệnh. Kiểm tra lệnh trợ giúp để biết thêm thông tin."},
+            {"emptyCommand", "Lần tiếp theo bạn đánh thức tôi, hãy gửi một lệnh."},
+            {"followersEmbed", "Người theo dõi"},
+            {"followersEmbedYtg", "Người đăng ký"},
+            {"guildJoinSuccess", "Hi there! Tôi đang sống, dòng suối thông báo về bot! Kiểu`" +
                     Const.COMMAND_PREFIX + Const.COMMAND +
-                    " help` for a list of my commands.\n\n" +
-                    "If you prefer that I speak in a different language, you should type `" +
+                    " help` để biết danh sách các lệnh của tôi.\n\n" +
+                    "Nếu bạn thích tôi nói bằng một ngôn ngữ khác, bạn nên gõ `" +
                     Const.COMMAND_PREFIX + Const.COMMAND +
-                    " botlang help` for more information on my available languages.\n\n" +
-                    "If you need some help setting me up, come join my Discord at " +
+                    " botlang help` để biết thêm thông tin về các ngôn ngữ hiện có của tôi.\n\n" +
+                    "Nếu bạn cần giúp đỡ tôi, hãy tham gia sự bất hòa của tôi tại " +
                     Const.DISCORD_URL +
-                    " and check out the how-to-setup and command-list channels for all the info!\n\n" +
-                    "Don't forget to say hey!"},
-            {"helpPm", "* Hey there, %s! So I hear you're looking for some help? Here is a list of my commands.\n\n" +
+                    " Và kiểm tra các cách để thiết lập và danh sách các lệnh kênh cho tất cả các thông tin!\n\n" +
+                    "Đừng quên nói hey!"},
+            {"helpPm", "* Hey there, %s! Vì vậy, tôi nghe bạn đang tìm kiếm một số trợ giúp? Dưới đây là danh sách các lệnh của tôi.\n\n" +
                     "# ADD\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
                     "# MIXER\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " mixer help\n\n" +
                     "# BOTLANG\n" +
-                    "* Currently supported languages: English, Czech, German, French, Spanish\n" +
-                    "* For more information, type: " +
+                    "* Các ngôn ngữ được hỗ trợ hiện nay: tiếng Anh, tiếng Séc, tiếng Đức, tiếng Pháp, tiếng Tây Ban Nha\n" +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " botlang help\n\n" +
                     "# CLEANUP\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " cleanup help\n\n" +
                     "# COMPACT\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " compact help\n\n" +
                     "# CONFIG\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config help\n\n" +
                     "# INVITE\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " invite help\n\n" +
                     "# LIST\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " list help\n\n" +
                     "# PICARTO\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\u200B\n" +
                     "# PING\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
                     "# REMOVE\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " remove help\n\n" +
                     "# SMASHCAST\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " smashcast help\n\n" +
                     "# STREAMLANG\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streamlang help\n\n" +
                     "# STREAMS\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streams help\n\n" +
                     "# TWITCH\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
                     "# YOUTUBE GAMING\n" +
-                    "* For more information, type: " +
+                    "* Để biết thêm thông tin, gõ: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ytg help\n\n" +
                     "# PATREON/DONATE\n" +
-                    "Gives the link to the bot's patreon. Commands are :\n" +
+                    "Cung cấp liên kết tới patreon của bot. Lệnh là :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
                     "# TRELLO/BUG/REQUEST\n" +
-                    "Gives the link to our Trello which is used for bug reports and feature requests. Commands are :\n" +
+                    "Cung cấp liên kết đến Trello của chúng tôi được sử dụng cho báo cáo lỗi và yêu cầu tính năng. Lệnh là :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " request\n" +
-                    "If you need additional help, join my Discord.  Lots of helpful people there:  " + Const.DISCORD_URL},
-            {"incorrectArgs", "You passed incorrect or missing arguments to me.  Check the help command for more info."},
-            {"invite", "Hey %s! Invite me to your server!\n\n\t"
-                    + "**Click here:** <https://discordapp.com/oauth2/authorize?&client_id="
+                    "Nếu bạn cần trợ giúp thêm, tham gia sự bất hòa của tôi. Rất nhiều người có ích ở đó:  " + Const.DISCORD_URL},
+            {"incorrectArgs", "Bạn đã vượt qua các đối số không chính xác hoặc thiếu đối với tôi. Kiểm tra lệnh trợ giúp để biết thêm thông tin."},
+            {"invite", "Hey %s! Mời tôi vào máy chủ của bạn!\n\n\t"
+                    + "**Bấm vào đây:** <https://discordapp.com/oauth2/authorize?&client_id="
                     + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8>"},
-            {"inviteHelp", "# INVITE\n* Used to display my invite link.\n\n## USAGE:  "
+            {"inviteHelp", "# INVITE\n* Được sử dụng để hiển thị liên kết lời mời của tôi.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " invite\n\tInvite NowLive bot to your Discord Server."},
-            {"listHelp", "# LIST\n* This command lists things from the database.\n\n## USAGE:  "
+                    + " invite\n\tInvite NowLive bot vào máy chủ Discord của bạn."},
+            {"listHelp", "# LIST\n* Lệnh này liệt kê những thứ từ cơ sở dữ liệu.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tmixerChannel     - Lists the Mixer Channels you follow"
-                    + "\n\tmixerTeam        - Lists the Mixer Teams you follow"
-                    + "\n\tgfilter          - Lists all game filters you have set up"
-                    + "\n\tmanager          - Lists the managers on this server"
-                    + "\n\tpicartoChannel   - Lists the Picarto Channels you follow"
-                    + "\n\tsetting          - Lists common bot settings"
-                    + "\n\tsmashcastChannel - Lists the Smashcast Channels you follow"
-                    + "\n\tsmashcastGame    - List the Smashcast Games that I'm tracking for you"
-                    + "\n\tsmashcastTeam    - Lists the Smashcast teams you follow"
-                    + "\n\ttfilter          - Lists all title filters you have set up"
-                    + "\n\ttwitchChannel    - Lists the Twitch Channels you follow"
-                    + "\n\ttwitchCommunity  - List the Twitch Communities you follow"
-                    + "\n\ttwitchGame       - List the Twitch Games that I'm tracking for you"
-                    + "\n\ttwitchTeam       - Lists the Twitch teams you follow"
-                    + "\n\tytgChannel       - Lists the YouTube Gaming Channels you follow"
+                    + "\n\tmixerChannel     - Liệt kê các kênh Mixer bạn theo dõi"
+                    + "\n\tmixerTeam        - Liệt kê các nhóm Mixer bạn theo dõi"
+                    + "\n\tgfilter          - Liệt kê tất cả bộ lọc trò chơi mà bạn đã thiết lập"
+                    + "\n\tmanager          - Liệt kê các nhà quản lý trên máy chủ này"
+                    + "\n\tpicartoChannel   - Liệt kê các Kênh Picarto bạn theo dõi"
+                    + "\n\tsetting          - Liệt kê các cài đặt bot phổ biến"
+                    + "\n\tsmashcastChannel - Liệt kê các Kênh Smashcast mà bạn theo dõi"
+                    + "\n\tsmashcastGame    - Liệt kê các trò chơi Smashcast mà tôi đang theo dõi cho bạn"
+                    + "\n\tsmashcastTeam    - Liệt kê các nhóm Smashcast bạn theo dõi"
+                    + "\n\ttfilter          - Liệt kê tất cả các bộ lọc tiêu đề mà bạn đã thiết lập"
+                    + "\n\ttwitchChannel    - Liệt kê các kênh Twitch mà bạn theo dõi"
+                    + "\n\ttwitchCommunity  - Liệt kê Cộng đồng Twitch mà bạn theo dõi"
+                    + "\n\ttwitchGame       - Liệt kê các trò chơi Twitch mà tôi đang theo dõi cho bạn"
+                    + "\n\ttwitchTeam       - Liệt kê các đội Twitch bạn theo dõi"
+                    + "\n\tytgChannel       - Liệt kê Kênh Trò chơi YouTube bạn theo dõi"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel"},
             {"listSettings", "# Bot Settings on Your Server" +
-                    "\n* Bot language is set to: %s." +
-                    "\n* Broadcaster language is set to: %s." +
-                    "\n* Cleanup is set to: %s." +
-                    "\n* Compact mode is set to: %s." +
-                    "\n* Current online announcement message format is: %s." +
-                    "\n* Current offline announcement message format is: %s." +
-                    "\n* Default announcement channel is: %s" +
-                    "\n* Notification is set to: %s."},
-            {"needOneManager", "If you remove that manager, who will manage me?"},
-            {"noBotManager", "It's against the Discord Bot Union By-Laws for bots to manage me. Sorry, try and find a " +
-                    "suitable human for the job. :thumbsup:"},
-            {"noneOnline", "Sorry %s, but there's nobody online right now that this server is following."},
-            {"notAManager", "Sorry, but only my managers can do that. Type `" + Const.COMMAND_PREFIX + Const.COMMAND +
-                    " list manager` for a list of people that can."},
-            {"notAnAdmin", "To whom it may concern:  I am your servant, but you are not my master."},
-            {"notifyEveryone", ":tada: WHOA!!  **EVERYONE** that belongs to the server will get notified when I " +
-                    "announce streams!  *(Are you sure?  I don't recommend this for large servers...  It can make " +
-                    "people grumpy.)*"},
-            {"notifyDeprecated", "# -nl notify is deprecated no longer being used.  Please use: -nl config notify"},
-            {"notifyHelp", "# NOTIFY\n* Used to change the global notification option for this server.\n\n## USAGE:  "
+                    "\n* Ngôn ngữ của Bot được đặt thành: %s." +
+                    "\n* Ngôn ngữ phát thanh được đặt thành: %s." +
+                    "\n* Cleanup được đặt thành: %s." +
+                    "\n* Chế độ nhỏ gọn được đặt thành: %s." +
+                    "\n* Định dạng thông báo tin tức trực tuyến hiện tại là: %s." +
+                    "\n* Định dạng tin nhắn thông báo hiện tại không trực tuyến là: %s." +
+                    "\n* Kênh thông báo mặc định là: %s" +
+                    "\n* Thông báo được đặt thành: %s."},
+            {"needOneManager", "Nếu bạn gỡ bỏ người quản lý đó, ai sẽ quản lý tôi?"},
+            {"noBotManager", "Đó là chống lại các Điều khoản bổ sung của Tổ chức Bot Chiếm dụng để quản lý tôi. Xin lỗi, hãy thử và tìm một " +
+                    "Con người thích hợp cho công việc. :thumbsup:"},
+            {"noneOnline", "Lấy làm tiếc %s, Nhưng hiện tại không có ai trực tuyến mà máy chủ này đang theo dõi."},
+            {"notAManager", "Xin lỗi, nhưng chỉ có các nhà quản lý mới có thể làm được. Kiểu `" + Const.COMMAND_PREFIX + Const.COMMAND +
+                    " List manager` để biết danh sách những người có thể."},
+            {"notAnAdmin", "Đối với ai mà nó quan tâm: Tôi là đầy tớ của bạn, nhưng bạn không phải là chủ của tôi."},
+            {"notifyEveryone", ":tada: WHOA!!  **EVERYONE** Đó thuộc về máy chủ sẽ được thông báo khi tôi " +
+                    "Công bố luồng! *(Bạn có chắc không? Tôi không khuyên bạn nên điều này cho các máy chủ lớn ... Nó có thể làm cho " +
+                    "Mọi người khó chịu.)*"},
+            {"notifyDeprecated", "# -nl notify Không được sử dụng nữa. Vui lòng sử dụng: -nl config notify"},
+            {"notifyHelp", "# NOTIFY\n* Được sử dụng để thay đổi tùy chọn thông báo toàn cầu cho máy chủ này.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " config notify <option>"
-                    + "\n\tnone     - No @ notifications of any kind (default)"
-                    + "\n\there     - I will notify only those people that are online when I make the announcement"
-                    + "\n\teveryone - I'll notify EVERYONE!!  Mwahahaha!!  (I don't recommend this on large servers)"
-                    + "\n\t@<role>  - I will send an @ mention for the role of your choice"
-                    + "\n\t@<user>  - Want to notify a single user?  This is the option for you!"
+                    + "\n\tnone     - Thông báo No @ bất kỳ loại nào (mặc định)"
+                    + "\n\there     - Tôi sẽ chỉ thông báo cho những người trực tuyến khi tôi thông báo"
+                    + "\n\teveryone - Tôi sẽ thông báo cho mọi người! Mwahahaha !! (Tôi không đề nghị này trên các máy chủ lớn)"
+                    + "\n\t@<role>  - Tôi sẽ gửi một @ đề cập đến cho vai trò của sự lựa chọn của bạn"
+                    + "\n\t@<user>  - Bạn muốn thông báo cho một người dùng? Đây là sự lựa chọn cho bạn!"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config notify everyone"},
-            {"notifyHere", " :bellhop_bell: All who are online will get a mention when I announce streams."},
-            {"notifyRoleUser", "# I will @ mention %s with every announcement"},
-            {"notifyTooMany", "# You can only notify one %s at a time!"},
-            {"notifyMultipleUsers", " If you want multiple users notified, create a role and have it notified."},
-            {"notifyNone", " :ok_hand: I won't mention anyone in my announcements."},
+            {"notifyHere", " :bellhop_bell: Tất cả những người trực tuyến sẽ nhận được đề cập đến khi tôi thông báo các luồng."},
+            {"notifyRoleUser", "# Tôi sẽ @ đề cập đến %s Với mọi thông báo"},
+            {"notifyTooMany", "# Bạn chỉ có thể thông báo cho một %s tại một thời điểm!"},
+            {"notifyMultipleUsers", " Nếu bạn muốn thông báo cho nhiều người dùng, hãy tạo một vai trò và thông báo nó."},
+            {"notifyNone", " :ok_hand: Tôi sẽ không đề cập đến bất cứ ai trong các thông báo của tôi."},
             {"nowLive", "NOW LIVE!\n"},
-            {"nowPlayingEmbed", "Now Playing"},
-            {"nowPlayingLower", " is now playing "},
-            {"nowStreamingEmbed", " is now streaming!"},
-            {"numUniqueMembers", "Number Unique Members"},
+            {"nowPlayingEmbed", "Đang chơi"},
+            {"nowPlayingLower", " Đang chơi "},
+            {"nowStreamingEmbed", " Hiện đang phát trực tuyến!"},
+            {"numUniqueMembers", "Số thành viên duy nhất"},
             {"offline", "OFFLINE!\n"},
-            {"offlineEmbed", " has gone offline!"},
+            {"offlineEmbed", " Đã đi offline!"},
             {"on", " on "},
-            {"onlineStreamPm1", "Hey there!  There's currently "},
-            {"onlineStreamPm2", " streamers online that you may be interested in!  Follow their links to check them " +
-                    "out: \n\n"},
-            {"oops", "Oops!  Something went wrong and nothing was changed!  Let's try that again."},
-            {"patreon", "If you wish to donate to the bot consider using our Patreon. https://www.patreon.com/nowlive"},
-            {"patreonHelp", "# Gives the link to our patreon page."},
-            {"picartoChannelNotFound", "\n# Channel(s) not found on Picarto: %s."},
-            {"picartoHelp", "# PICARTO\n* Add and remove things that are Picarto channels.\n"
+            {"onlineStreamPm1", "Hey there!  Hiện tại có "},
+            {"onlineStreamPm2", " Streamers trực tuyến mà bạn có thể quan tâm! Theo dõi liên kết của họ để kiểm tra " +
+                    "ngoài: \n\n"},
+            {"oops", "Oops!  Đã xảy ra lỗi và không có gì thay đổi! Hãy thử lại lần nữa."},
+            {"patreon", "Nếu bạn muốn tặng cho bot xem xét sử dụng Patreon của chúng tôi. https://www.patreon.com/nowlive"},
+            {"patreonHelp", "# Cung cấp liên kết tới trang patreon của chúng tôi."},
+            {"picartoChannelNotFound", "\n# (Các) kênh không tìm thấy trên Picarto: %s."},
+            {"picartoHelp", "# PICARTO\n* Thêm và xóa những thứ là các kênh Picarto.\n"
                     + "* Notes:\n\t"
                     + "To add title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Picarto URL. It will not work!! Only use the channel name (the part after picarto.tv)\n\t"
-                    + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
-                    + "Only channels are supported for now.  Picarto categories are very limited and most are grouped in a small select few.\n\t"
-                    + "The only required option is: channelName\n\u200B\n"
+                    + "KHÔNG sử dụng URL Picarto đầy đủ. Nó sẽ không làm việc!! Chỉ sử dụng tên kênh (phần sau picarto.tv)\n\t"
+                    + "Bạn có thể thêm nhiều kênh và các tiêu đề bộ lọc bằng cách sử dụng các ký tự đường ống | giữa họ.\n\t"
+                    + "Chỉ bây giờ các kênh được hỗ trợ. Danh mục Picarto rất hạn chế và hầu hết đều được nhóm lại trong một số ít được chọn.\n\t"
+                    + "Tùy chọn chỉ được yêu cầu là: channelName\n\u200B\n"
                     + "## Picarto Channels\n"
-                    + "Note: Adding an announcement channel and title filters are optional.\n"
+                    + "Note: Thêm kênh thông báo và bộ lọc tiêu đề là tùy chọn.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel channelName #announcementChannel [titleFilters]\n\n"
                     + "## Picarto Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Picarto\n"
+                    + "* LƯU Ý: Điều này ảnh hưởng đến tất cả các thông báo luồng cho Picarto\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [word|different words|more words] #announcementChannel\n\n"
                     + "## Picarto Stream Stats\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto stats\n\n"
                     + "* Example:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"},
-            {"ping", "When I was in China on the All-American Ping Pong team, I just loved playing ping-pong with my " +
-                    "Flexolite ping pong paddle."},
-            {"pingHelp", "```Markdown\n# PING\n* Used to ping me. If I am working correctly, I'll send you a pong.\n\n## USAGE: "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (Thêm một kênh để thông báo trong một kênh nhất định)\n\t"},
+            {"ping", "Khi tôi ở Trung Quốc trên đội Ping Pong toàn Mỹ, tôi chỉ thích chơi ping-pong với tôi " +
+                    "Bóng chày Flexolite."},
+            {"pingHelp", "```Markdown\n# PING\n* Được sử dụng để ping tôi. Nếu tôi làm việc đúng, tôi sẽ gửi cho bạn một bàn.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ping```"},
-            {"platformAnnounceUpdate", "\n# Updated the announcement channel for %s to: %s."},
-            {"platformAnnounceUpdateFail", "\n! Failed to change the announce channel for %s to: %s."},
-            {"platformChannelAdd", "\n# Added channel(s): %s."},
-            {"platformChannelAddFail", "\n# Failed to add channel(s): %s."},
-            {"platformChannelAnnounce", "\n# They will be announced in: #%s."},
-            {"platformChannelGameFilter", "\n# They will only be announced when they are playing: %s."},
-            {"platformChannelRemove", "\n# Removed channel(s): %s."},
-            {"platformChannelRemoveFail", "\n! Failed to delete channel(s): %s."},
-            {"platformChannelTitleFilter", "\n# They will only be announced when these words are in the title: %s."},
-            {"platformGameAdd", "\n# Added game(s): %s."},
-            {"platformGameAddFail", "\n# Failed to add game(s): %s."},
-            {"platformGameAnnounce", "\n# The game will announce in: #%s."},
-            {"platformGameFilterAdd", "\n# Added game filter(s): %s."},
-            {"platformGameFilterAddFail", "\n# Failed to add game filter(s): %s."},
-            {"platformGameFilterRemove", "\n# Removed game filter(s): %s."},
-            {"platformGameFilterRemoveFail", "\n# Failed to remove game filter(s): %s."},
-            {"platformGameNotFound", "\n #Game(s) not found: %s."},
-            {"platformGameRemove", "\n# Removed game(s): %s."},
-            {"platformGameRemoveFail", "\n# Failed to remove game(s): %s."},
-            {"platformTeamAdd", "\n# Added team(s): %s."},
-            {"platformTeamAddFail", "\n# Failed to add team(s): %s."},
-            {"platformTeamAnnounce", "\n# The team(s) will announce in: #%s."},
-            {"platformTeamNotFound", "\n# Team(s) not found: %s."},
-            {"platformTeamRemove", "\n# Removed team(s): %s."},
-            {"platformTeamRemoveFail", "\n# Failed to remove team(s): %s."},
-            {"platformTitleFilterAdd", "\n# Added title filter(s): %s."},
-            {"platformTitleFilterAddFail", "\n# Failed to add title filter(s): %s."},
-            {"platformTitleFilterRemove", "\n# Removed title filter(s): %s."},
-            {"platformTitleFilterRemoveFail", "\n# Failed to remove title filter(s): %s."},
-            {"privateMessageReply", "I'm sorry, but the bot you are trying to reach has a voice mail box that has not " +
-                    "been setup yet.  Please try your PM again later."},
+            {"platformAnnounceUpdate", "\n# Đã cập nhật kênh thông báo cho %s đến: %s."},
+            {"platformAnnounceUpdateFail", "\n! Không thể thay đổi kênh thông báo cho %s đến: %s."},
+            {"platformChannelAdd", "\n# (Các) kênh bổ sung: %s."},
+            {"platformChannelAddFail", "\n# Không thể thêm (các) kênh: %s."},
+            {"platformChannelAnnounce", "\n# Họ sẽ được công bố trong: #%s."},
+            {"platformChannelGameFilter", "\n# Họ sẽ chỉ được thông báo khi họ chơi: %s."},
+            {"platformChannelRemove", "\n# (Các) kênh bị loại bỏ: %s."},
+            {"platformChannelRemoveFail", "\n! Không thể xóa (các) kênh: %s."},
+            {"platformChannelTitleFilter", "\n# Họ sẽ chỉ được thông báo khi những từ này có trong tiêu đề: %s."},
+            {"platformGameAdd", "\n# Trò chơi đã được thêm: %s."},
+            {"platformGameAddFail", "\n# Không thể thêm (các) trò chơi: %s."},
+            {"platformGameAnnounce", "\n# Trò chơi sẽ thông báo trong: #%s."},
+            {"platformGameFilterAdd", "\n# Đã thêm (các) bộ lọc trò chơi: %s."},
+            {"platformGameFilterAddFail", "\n# Không thể thêm (các) bộ lọc trò chơi: %s."},
+            {"platformGameFilterRemove", "\n# Đã xóa (các) bộ lọc trò chơi: %s."},
+            {"platformGameFilterRemoveFail", "\n# Không thể xóa (các) bộ lọc trò chơi: %s."},
+            {"platformGameNotFound", "\n #Game không được tìm thấy: %s."},
+            {"platformGameRemove", "\n# Trò chơi đã bị loại bỏ: %s."},
+            {"platformGameRemoveFail", "\n# Không thể xóa (các) trò chơi: %s."},
+            {"platformTeamAdd", "\n# Thêm (các) nhóm: %s."},
+            {"platformTeamAddFail", "\n# Không thể thêm (các) nhóm: %s."},
+            {"platformTeamAnnounce", "\n# Nhóm sẽ thông báo trong: #%s."},
+            {"platformTeamNotFound", "\n# Nhóm không tìm thấy: %s."},
+            {"platformTeamRemove", "\n# (Các) nhóm đã bị loại bỏ: %s."},
+            {"platformTeamRemoveFail", "\n# Không thể xóa (các) nhóm: %s."},
+            {"platformTitleFilterAdd", "\n# Đã thêm (các) bộ lọc Tiêu đề: %s."},
+            {"platformTitleFilterAddFail", "\n# Không thể thêm (các) bộ lọc Tiêu đề: %s."},
+            {"platformTitleFilterRemove", "\n# Đã xóa (các) bộ lọc tiêu đề: %s."},
+            {"platformTitleFilterRemoveFail", "\n# Không thể xóa (các) bộ lọc tiêu đề: %s."},
+            {"privateMessageReply", "Tôi xin lỗi, nhưng bot mà bạn đang cố gắng truy cập có một hộp thư thoại không có " +
+                    "Được thiết lập được nêu ra. Vui lòng thử lại PM của bạn sau."},
             {"removed", "Removed %s %s."},
-            {"removeManagerFail", "I can't remove %s because they are not in my database."},
-            {"removeHelp", "# REMOVE\n* Used to remove managers from my database.\n\n## USAGE:  "
+            {"removeManagerFail", "Tôi không thể xóa %s Bởi vì chúng không có trong cơ sở dữ liệu của tôi."},
+            {"removeHelp", "# REMOVE\n* Được sử dụng để xóa người quản lý khỏi cơ sở dữ liệu của tôi.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @userName"
-                    + "\n\tmanager - The @ mention of the user to remove as a manager"
+                    + "\n\tmanager - Các @ đề cập đến của người sử dụng để loại bỏ như là một người quản lý"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort"},
             {"servers", "Servers"},
-            {"setDefaultAnnounceChannelDoNotOwnChannel", "# Hey now, I can't announce to a channel that doesn't exists on your " +
-                    "server!"},
-            {"setDefaultAnnounceChannelFail", "# I can't seem to send announcements there.  Make sure I have the proper permissions " +
-                    "in that channel."},
-            {"setDefaultAnnounceChannelHelp", "# SET DEFAULT ANNOUNCE CHANNEL\n* Set the default announcement channel.\n\n## USAGE:  "
+            {"setDefaultAnnounceChannelDoNotOwnChannel", "# Bây giờ, tôi không thể thông báo cho một kênh không tồn tại trên " +
+                    "Máy chủ!"},
+            {"setDefaultAnnounceChannelFail", "# Tôi dường như không thể gửi thông báo ở đó. Hãy chắc chắn rằng tôi có quyền thích hợp " +
+                    "Trong kênh đó."},
+            {"setDefaultAnnounceChannelHelp", "# SET DEFAULT ANNOUNCE CHANNEL\n* Đặt kênh thông báo mặc định.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " config setDefaultAnnounceChannel <channel>\n\t"
-                    + "<channel> - The name of the channel you wish to be your default (MUST include the #)\n"
-                    + "This option only applies if you have not set a specific announce channel in the Twitch command."
+                    + "<channel> - Tên của kênh mà bạn muốn là mặc định (PHẢI bao gồm #)\n"
+                    + "Tùy chọn này chỉ áp dụng nếu bạn chưa thiết lập kênh thông báo cụ thể trong lệnh Twitch."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordchannel"},
-            {"setDefaultAnnounceChannelSuccess", "# Default announcement channel set to: #%s."},
-            {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Set a custom offline message for edited offline announcements.\n\n" +
-                    "## Available tokens to use in your message:\n" +
-                    "\t* %CHANNEL%   - The name of the channel\n" +
-                    "\t* %FOLLOWERS% - The total number of followers\n" +
-                    "\t* %GAME%      - The name of the game being streamed\n" +
-                    "\t* %STATUS%    - The status (title) of the stream\n" +
-                    "\t* %URL%       - The URL for the stream\n" +
-                    "\t* %USER%      - The name of the channel\n" +
-                    "\t* %VIEWERS%   - The number of current viewers\n\n" +
+            {"setDefaultAnnounceChannelSuccess", "# Kênh thông báo mặc định được đặt thành: #%s."},
+            {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Đặt một tin nhắn ngoại tuyến tùy chỉnh cho các thông báo đã được chỉnh sửa ngoại tuyến.\n\n" +
+                    "## Có thẻ để sử dụng trong thư của bạn:\n" +
+                    "\t* %CHANNEL%   - Tên của kênh\n" +
+                    "\t* %FOLLOWERS% - Tổng số người theo dõi\n" +
+                    "\t* %GAME%      - Tên của trò chơi đang được phát trực tuyến\n" +
+                    "\t* %STATUS%    - Trạng thái (tiêu đề) của luồng\n" +
+                    "\t* %URL%       - URL cho luồng\n" +
+                    "\t* %USER%      - Tên của kênh\n" +
+                    "\t* %VIEWERS%   - Số người xem hiện tại\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage " +
-                    "%CHANNEL% is no longer live!  Sorry, you missed them this time."},// <--- Do not translate between the %
-            {"setOnlineHelp", "# CONFIG SET ONLINE MESSAGE\n* Set a custom announcement message.\n\n" +
-                    "## Available tokens to use in your message:\n" +
-                    "\t* %CHANNEL%   - The name of the channel\n" +
-                    "\t* %FOLLOWERS% - The total number of followers\n" +
-                    "\t* %GAME%      - The name of the game being streamed\n" +
-                    "\t* %STATUS%    - The status (title) of the stream\n" +
-                    "\t* %URL%       - The URL for the stream\n" +
-                    "\t* %USER%      - The name of the channel\n" +
-                    "\t* %VIEWERS%   - The number of current viewers\n\n" +
+                    "%CHANNEL% Không còn sống nữa! Xin lỗi, bạn đã nhớ họ lần này."},// <--- Do not translate between the %
+            {"setOnlineHelp", "# CONFIG SET ONLINE MESSAGE\n* Đặt một thông báo thông báo tùy chỉnh.\n\n" +
+                    "## Có thẻ để sử dụng trong thư của bạn:\n" +
+                    "\t* %CHANNEL%   - Tên của kênh\n" +
+                    "\t* %FOLLOWERS% - Tổng số người theo dõi\n" +
+                    "\t* %GAME%      - Tên của trò chơi đang được phát trực tuyến\n" +
+                    "\t* %STATUS%    - Trạng thái (tiêu đề) của luồng\n" +
+                    "\t* %URL%       - URL cho luồng\n" +
+                    "\t* %USER%      - Tên của kênh\n" +
+                    "\t* %VIEWERS%   - Số người xem hiện tại\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage " +
-                    "%CHANNEL% has just gone live! Watch their stream here: %URL%"},// <--- Do not translate between the %
-            {"shardsThis", "Shard Number"},
-            {"shardsTotal", "Number Shards"},
-            {"smashcastChannelNotFound", "\n# Channel(s) not found on Smashcast: %s."},/////////////////
-            {"smashcastHelp", "# SMASHCAST\n* Add and remove things that are Smashcast.tv related.\n"
+                    "%CHANNEL% Đã ra đi! Xem luồng của họ ở đây: %URL%"},// <--- Do not translate between the %
+            {"shardsThis", "Số Shard"},
+            {"shardsTotal", "Số Shards"},
+            {"smashcastChannelNotFound", "\n# Không tìm thấy kênh trên Smashcast: %s."},/////////////////
+            {"smashcastHelp", "# SMASHCAST\n* Thêm và xóa những thứ liên quan đến Smashcast.tv.\n"
                     + "* Notes:\n\t"
-                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Smashcast URL. It will not work!! Use only the channel name (www.smashcast.tv/channelName)\n\t"
-                    + "You may add multiple channels, teams, games, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName/gameName\n\u200B\n"
+                    + "Để thêm bộ lọc trò chơi và bộ lọc tiêu đề, bạn PHẢI bao gồm dấu ngoặc.\n\t"
+                    + "KHÔNG sử dụng URL Smashcast đầy đủ. Nó sẽ không làm việc!! Chỉ sử dụng tên kênh (www.smashcast.tv/channelName)\n\t"
+                    + "Bạn có thể thêm nhiều kênh, đội, trò chơi, trò chơi và các tiêu đề bộ lọc bằng cách sử dụng các ký tự đường ống | giữa họ.\n\t"
+                    + "Các lựa chọn chỉ được yêu cầu là: channelName/teamName/gameName\n\u200B\n"
                     + "## Smashcast Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional.\n"
+                    + "Lưu ý: Thêm kênh thông báo, bộ lọc trò chơi và tiêu đề là tùy chọn.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Smashcast Games (Announce ALL live streams for that game)\n"
+                    + "## Trò chơi Smashcast (Thông báo TẤT CẢ các luồng trực tiếp cho trò chơi đó)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game gameName #announcementChannel\n\n"
-                    + "## Smashcast Teams (Announce ALL live streams in the team)\n"
+                    + "## Nhóm Smashcast (Thông báo TẤT CẢ các dòng trực tiếp trong nhóm)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team teamName #announcementChannel\n\n"
-                    + "## Smashcast Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Smashcast\n"
+                    + "## Bộ lọc Trò chơi Smashcast (Toàn cầu)\n"
+                    + "* Chú ý: Điều này ảnh hưởng đến tất cả các thông báo dòng cho Smashcast\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Smashcast Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Smashcast\n"
+                    + "## Bộ lọc tiêu đề Smashcast (Toàn cầu)\n"
+                    + "* Chú ý: Điều này ảnh hưởng đến tất cả các thông báo dòng cho Smashcast\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "## Smashcast Stream Stats\n"
+                    + "## Thống kê Strashcast Stream\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast stats\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (adds a game to the global announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (adds a team with a specific announcement channel)"},
-            {"staffOverride", "*Permission of this command have been overridden by a member of the bot staff.*"},
+                    + "Warcraft} (Thêm kênh để thông báo trong kênh và bộ lọc trò chơi nhất định)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (Thêm một trò chơi vào kênh thông báo toàn cầu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (Thêm một nhóm với một kênh thông báo cụ thể)"},
+            {"staffOverride", "*Sự cho phép của lệnh này đã bị ghi đè bởi một thành viên của nhân viên bot.*"},
             {"statusHelp", "# STATUS\n* Shows various statistics of the bot.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status"},
-            {"streamlangHelp", "# STREAMLANG\n* Allows you to filter streams by the language it is being broadcast " +
-                    "in.  This supports the English spelling of the language, or the native spelling.  Must be a supported " +
-                    "language on Twitch that is listed in the Dashboard.\n\n## USAGE: "
+            {"streamlangHelp", "# STREAMLANG\n* Cho phép bạn lọc các luồng theo ngôn ngữ mà nó đang được phát sóng " +
+                    "In Điều này hỗ trợ việc đánh vần tiếng Anh của ngôn ngữ, hoặc cách đánh vần bản xứ. Phải là một " +
+                    "Ngôn ngữ trên Twitch được liệt kê trong Bảng điều khiển.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND +
                     " streamlang <language>\n" +
-                    "* You may use either the native spelling of the language or the English spelling of the language."
+                    "* Bạn có thể sử dụng một trong hai cách đánh vần tự nhiên của ngôn ngữ hoặc chính tả bằng tiếng Anh."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang german"},
-            {"streamTitleEmbed", "Stream Title"},
-            {"streamsHelp", "# STREAMS\n* I'll send you a list of active streams as a PM.\n* (NOTE: You will likely " +
-                    "receive several private messages using this command, depending on how many streams your Discord " +
-                    "monitors!)\n\n## USAGE:  "
+            {"streamTitleEmbed", "Tiêu đề dòng"},
+            {"streamsHelp", "# STREAMS\n* Tôi sẽ gửi cho bạn một danh sách các luồng hoạt động như là một PM.\n* (NOTE: You will likely " +
+                    "Nhận được một số tin nhắn riêng bằng cách sử dụng lệnh này, tùy thuộc vào bao nhiêu dòng Discord của bạn " +
+                    "Màn hình!)\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " streams"},
-            {"totalViewsEmbed", "Total Views"},
-            {"trello", "To report bugs or to request features to be added to the bot please use our Trello. " +
+                    + " dòng"},
+            {"totalViewsEmbed", "Tổng số lần xem"},
+            {"trello", "Để báo cáo lỗi hoặc yêu cầu các tính năng sẽ được thêm vào bot, vui lòng sử dụng Trello của chúng tôi. " +
                     "https://trello.com/invite/b/kcWshbIU/a94c145e598be9f8dd734197ba07288e/now-live-bot"},
-            {"trelloHelp", "# Returns the link to the Trello for the bot"},
-            {"twitchChannelNotFound", "\n# Channel(s) not found on Twitch: %s."},
-            {"twitchCommunities", "Twitch Communities"},
-            {"twitchCommunityAdd", "\n# Added community(s): %s."},
-            {"twitchCommunityAddFail", "\n# Failed to add community(s): %s."},
-            {"twitchCommunityAnnounce", "\n# The community(s) will announce in: #%s."},
-            {"twitchCommunityNotFound", "\n# Community(s) not found on Twitch: %s."},
-            {"twitchCommunityRemove", "\n# Removed community(s): %s."},
-            {"twitchCommunityRemoveFail", "\n# Failed to remove community(s): %s."},
-            {"twitchHelp", "# TWITCH\n* Add and remove things that are Twitch.tv related.\n"
+            {"trelloHelp", "# Trả về liên kết tới Trello cho bot"},
+            {"twitchChannelNotFound", "\n# (Các) kênh không tìm thấy trên Twitch: %s."},
+            {"twitchCommunities", "Cộng đồng Twitch"},
+            {"twitchCommunityAdd", "\n# Cộng cộng đồng(s): %s."},
+            {"twitchCommunityAddFail", "\n# Không thể thêm (các) cộng đồng: %s."},
+            {"twitchCommunityAnnounce", "\n# (Các) cộng đồng sẽ thông báo trong: #%s."},
+            {"twitchCommunityNotFound", "\n# Cộng đồng không tìm thấy trên Twitch: %s."},
+            {"twitchCommunityRemove", "\n# (Các) cộng đồng bị loại bỏ: %s."},
+            {"twitchCommunityRemoveFail", "\n# Không thể xóa (các) cộng đồng: %s."},
+            {"twitchHelp", "# TWITCH\n* Thêm và xóa những thứ có liên quan đến Twitch.tv.\n"
                     + "* Notes:\n\t"
-                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Twitch URL. It will not work!! Use only the channel name (www.twitch.tv/channelName)\n\t"
-                    + "The Team name must be from the URL, not the display name of the team. (www.twitch.tv/team/teamName)\n\t"
-                    + "You may add multiple channels, teams, games, communities, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/communityName/teamName/gameName\n\u200B\n"
-                    + "## Twitch Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional."
+                    + "Để thêm bộ lọc trò chơi và bộ lọc tiêu đề, bạn PHẢI bao gồm dấu ngoặc.\n\t"
+                    + "KHÔNG sử dụng URL Twitch đầy đủ. Nó sẽ không làm việc!! Chỉ sử dụng tên kênh (www.twitch.tv/channelName)\n\t"
+                    + "Tên Nhóm phải từ URL, chứ không phải tên hiển thị của nhóm. (www.twitch.tv/team/teamName)\n\t"
+                    + "Bạn có thể thêm nhiều kênh, nhóm, trò chơi, cộng đồng, bộ lọc trò chơi và tiêu đề bằng cách sử dụng ký tự đường ống | giữa họ.\n\t"
+                    + "Các lựa chọn chỉ được yêu cầu là: channelName/communityName/teamName/gameName\n\u200B\n"
+                    + "## Kênh twitch\n"
+                    + "Lưu ý: Thêm kênh thông báo, bộ lọc trò chơi và tiêu đề là tùy chọn."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Twitch Communities (Announce ALL live streams in the community)\n"
+                    + "## Cộng đồng Twitch (Thông báo TẤT CẢ các tuyến sống trong cộng đồng)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community communityName #announcementChannel\n\n"
-                    + "## Twitch Games (Announce ALL live streams for that game)\n"
+                    + "## Trò chơi Twitch (Thông báo TẤT CẢ các tuyến sống cho trò chơi đó)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game gameName #announcementChannel\n\n"
-                    + "## Twitch Teams (Announce ALL live streams in the team)\n"
+                    + "## Các đội Twitch (Thông báo TẤT CẢ các dòng trực tuyến trong nhóm)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team teamName #announcementChannel\n\n"
-                    + "## Twitch Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Twitch\n"
+                    + "## Bộ lọc trò chơi Twitch (Toàn cầu)\n"
+                    + "* Chú ý: Điều này ảnh hưởng đến tất cả các thông báo dòng cho Twitch\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Twitch Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Twitch\n"
+                    + "## Bộ lọc tiêu đề Twitch (Toàn cầu)\n"
+                    + "* Chú ý: Điều này ảnh hưởng đến tất cả các thông báo dòng cho Twitch\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "## Twitch Stream Stats\n"
+                    + "## Thống kê Stream Twitch\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (adds a game to the global announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (adds the community with a specified announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (adds a team with a specific announcement channel)"},
-            {"twitchTeams", "Twitch Teams"},
-            {"typeOnce", "You only need to type that part once, silly."},
-            {"uniqueChannels", "Unique Channels %s"},
-            {"uniqueGames", "Unique Games %s"},
-            {"updateAnnounceMessageFail", "# Something went wrong and the announcement message was not changed."},
-            {"updateAnnounceMessageSuccess", "# You've updated the announcement message!  It now uses the format:\n\n* %s"},
-            {"updateOfflineMessageFail", "# Something went wrong and the offline message was not changed."},
-            {"updateOfflineMessageSuccess", "# You've updated the offline message!  It now uses the format:\n\n* %s"},
-            {"usePlatform", "Oops!  That's the old way of doing things!  Use the platform specific command!  Type `" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " help` for more info."},
-            {"watchThemHere", "Watch them here: "},
-            {"wrongCommand", " :thinking: I don't know that command."},
-            {"ytgChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."},
-            {"ytgHelp", "# YTG\n* Add and remove things that are YouTube Gaming channels.\n"
+                    + "Warcraft} (Thêm kênh để thông báo trong kênh và bộ lọc trò chơi nhất định)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (Thêm một trò chơi vào kênh thông báo toàn cầu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (Thêm cộng đồng với một kênh thông báo đã chỉ định)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (Thêm một nhóm với một kênh thông báo cụ thể)"},
+            {"twitchTeams", "Các đội Twitch"},
+            {"typeOnce", "Bạn chỉ cần gõ đoạn đó một lần, ngớ ngẩn."},
+            {"uniqueChannels", "Kênh duy nhất %s"},
+            {"uniqueGames", "Trò chơi độc đáo %s"},
+            {"updateAnnounceMessageFail", "# Đã xảy ra sự cố và thông báo tuyên bố không thay đổi."},
+            {"updateAnnounceMessageSuccess", "# Bạn đã cập nhật thông báo! Nó bây giờ sử dụng định dạng:\n\n* %s"},
+            {"updateOfflineMessageFail", "# Đã xảy ra sự cố và thông báo ngoại tuyến không thay đổi."},
+            {"updateOfflineMessageSuccess", "# Bạn đã cập nhật tin nhắn offline! Nó bây giờ sử dụng định dạng:\n\n* %s"},
+            {"usePlatform", "Oops!  Đó là cách làm việc cũ! Sử dụng lệnh nền tảng cụ thể! Kiểu `" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " Giúp đỡ` để biết thêm thông tin."},
+            {"watchThemHere", "Xem chúng ở đây: "},
+            {"wrongCommand", " :thinking: Tôi không biết lệnh đó."},
+            {"ytgChannelNotFound", "\n# (Các) kênh không tìm thấy trên Trò chơi trên YouTube: %s."},
+            {"ytgHelp", "# YTG\n* Thêm và xóa những thứ là các kênh Trò chơi trên YouTube.\n"
                     + "* Notes:\n\t"
-                    + "To add title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full YouTube Gaming URL. It will not work!! Only use the channel's display name (as shows under their live stream)\n\t"
-                    + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
-                    + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands.\n\t"
-                    + "Game filters are NOT a thing with YouTube.  See the above note about the API.\n\u200B\n"
-                    + "The only required option is: channelName\n\n"
-                    + "## YouTube Gaming Channels\n"
-                    + "Note: Adding an announcement channel and title filters are optional."
+                    + "Để thêm bộ lọc tiêu đề, bạn PHẢI bao gồm dấu ngoặc.\n\t"
+                    + "KHÔNG sử dụng URL của YouTube Gaming đầy đủ. Nó sẽ không làm việc!! Chỉ sử dụng tên hiển thị của kênh (như hiển thị dưới luồng trực tuyến của họ)\n\t"
+                    + "Bạn có thể thêm nhiều kênh và các tiêu đề bộ lọc bằng cách sử dụng các ký tự đường ống | giữa họ.\n\t"
+                    + "Chỉ bây giờ các kênh được hỗ trợ. API YouTube không hiển thị đúng tên trò chơi sẽ được sử dụng như trong các lệnh khác.\n\t"
+                    + "Bộ lọc trò chơi KHÔNG phải là một điều với YouTube. Xem lưu ý ở trên về API.\n\u200B\n"
+                    + "Tùy chọn chỉ được yêu cầu là: channelName\n\n"
+                    + "## Kênh trò chơi trên YouTube\n"
+                    + "Lưu ý: Thêm kênh thông báo và bộ lọc tiêu đề là tùy chọn."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
-                    + "## YouTube Gaming Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for YouTube Gaming\n"
+                    + "## Bộ lọc tiêu đề trên YouTube (Toàn cầu)\n"
+                    + "* LƯU Ý: Điều này ảnh hưởng đến tất cả các thông báo về luồng cho YouTube Gaming\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "## YouTube Gaming Stream Stats\n"
+                    + "## Số liệu thống kê trên YouTube về luồng chơi\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg stats\n\n"
                     + "* Example:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"}
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (Thêm một kênh để thông báo trong một kênh nhất định)\n\t"}
     };
 
     @Override
