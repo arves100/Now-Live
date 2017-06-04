@@ -16,7 +16,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package com.nowlive.bot.langs;
+package drafts;
 
 import com.nowlive.bot.core.Config;
 import com.nowlive.bot.util.Const;
