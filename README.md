@@ -33,7 +33,7 @@ Now Live has the following translations in progress:
 * Estonian
 * Finnish
 * Indonesian
-* Polish
+* Polish (translator stopped, needs new translator)
 * Romanian
 * Slovak
 * Swedish (translator stopped, needs new translator)
