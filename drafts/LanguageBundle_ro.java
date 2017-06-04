@@ -24,97 +24,97 @@ import com.nowlive.bot.util.Const;
 import java.util.ListResourceBundle;
 
 /**
- * @author <put your name here>
+ * @author DoNotErase_666
  * @version Romanian
  */
 public class LanguageBundle_ro extends ListResourceBundle {
 
     private Object[][] contents = {
-            {"added", "Added "},
-            {"addFail", "Failed to add "},
-            {"addHelp", "# ADD\n* Used to add managers for your server.\n\n## USAGE:  "
+            {"added", "Adaugat "},
+            {"addFail", "Nu a mers adaugarea "},
+            {"addHelp", "# ADD\n* Folosit pentru a adauga manageri pentru server.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " add <option> <content>"
                     + "\n\t<option> <content>"
-                    + "\n\tmanager - The @ mention of the user to add as a manager"
+                    + "\n\tmanager - Mentiunea @ a userului pentru a il face manager"
                     + "\n\n## EXAMPLE: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague"},
-            {"adminOverride", "*Permission of this command have been overridden by a developer.*"},
-            {"alreadyExists", "It looks like you already added that to my database. ¯\\_(ツ)_/¯"},
-            {"alreadyManager", "It seems I've already hired that user as a manager.  Find moar humanz!"},
-            {"announceHelp", "# ANNOUNCE\n* Shhh...  I'm a secret...\n\n## USAGE:  "
+            {"adminOverride", "*Permisiunea acestei comenzi a fost suprascrisa de un developer.*"},
+            {"alreadyExists", "Se pare ca deja ai adaugat aia. ¯\\_(ツ)_/¯"},
+            {"alreadyManager", "Se pare ca acea persoana este deja manager.  Kauta may multzi oameny!!"},
+            {"announceHelp", "# ANNOUNCE\n* Shhh...  Sunt un secret...\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " announce <content>\n\tThis command is only available to the developers."},
-            {"mixerChannelNotFound", "\n# Channel(s) not found on Mixer: %s."},
-            {"mixerHelp", "# MIXER\n* Add and remove things that are Mixer.com related.\n"
+                    + " announce <content>\n\tAceasta comanda este valabila doar pentru developeri."},
+            {"mixerChannelNotFound", "\n# Canalele acestea nu au fost gasite pe Mixer: %s."},
+            {"mixerHelp", "# MIXER\n* Adauga si sterge lucruri care sunt legate de Mixer.com.\n"
                     + "* Notes:\n\t"
-                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Mixer URL. It will not work!! Use only the channel name (www.mixer.com/channelName)\n\t"
-                    + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName\n\u200B\n"
-                    + "## Mixer Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional.\n"
+                    + "Pentru a adauga jocuri si titluri specifice, TREBUIE sa adaugi parantezele.\n\t"
+                    + "NU scrie tot linkul de la Mixer. Nu va merge!! Scrie decat numele canalului (www.mixer.com/Nume)\n\t"
+                    + "Poti adauga mai multe canale, echipe, jocuri si titluri specifice da ca pui semnul "|" intre ele.\n\t"
+                    + "Lucrurile care trebuie sunt: NumeCanal/NumeEchipa\n\u200B\n"
+                    + "## Canale Mixer\n"
+                    + "P.S: Adaugarea unui canal de anuntari, jocuri si titluri specifice este optionala.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Mixer Teams (Announce ALL live streams in the team)\n"
+                    + "## Echipe Mixer (Anunta TOATE livestreamurile din acea echipa)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team teamName #announcementChannel\n\n"
-                    + "## Mixer Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Mixer\n"
+                    + "## Jocuri specifice Mixer (Global)\n"
+                    + "* P.S: Acest lucru va afecta toate anunturile pentru Mixer\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Mixer Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Mixer\n"
+                    + "## Titluri specifice Mixer (Global)\n"
+                    + "* P.S: Acest lucru va afecta toate anunturile pentru Mixer\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "## Mixer Stream Stats\n"
+                    + "## Stasticile Streamului Mixer\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer stats\n\n"
-                    + "* Examples:\n\t"
+                    + "* Exemple:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
-            {"botLangFail", "Something went wrong and my language is still the same."},
-            {"botLangHelp", "# BOTLANG\n* Used to change the language of my responses.\n\n## USAGE: "
+                    + "Warcraft} (adauga un canal care doar anunta acea persoana doar cand joaca acele jocuri)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (adauga o echipa cu un canal de anunturi specific)\n\n"},
+            {"botLangFail", "Ceva nu a mers si limba mea este aceeasi."},
+            {"botLangHelp", "# BOTLANG\n* Comanda aceasta este pentru a schimba limba in care vorbesc.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " botlang language"
-                    + "\n\tEnter either the English spelling or the native spelling of the language you wish to set."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"
-                    + "\n\tIf you need further help with this command or others outside of what our help commands do and you wish to ask questions in a language currently associated "
-                    + "with the bot please feel free to reach out to our translators in our Discord for assistance. Discord is at " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
-            {"botLangSuccess", "You've successfully changed my language."},
-            {"botLangUnsupported", "That language is currently not supported."},
-            {"botStatistics", "%s Statistics"},
-            {"broadcasterLangAllSuccess", " :ok_hand: I'll look for streams from all languages."},
-            {"broadcasterLangFail", "Something went wrong and I'm still looking for all languages."},
-            {"broadcasterLangSuccess", " :ok_hand: I'll only look for streams that are in that language!"},
-            {"canNotRemoveOwner", "Silly human, you can't remove the server owner from the manager list. :laughing: " +
+                    + "\n\tScrie limba care vrei sa o setezi. (Trebuie sa scrii limba in engleza)."
+                    + "\n\n## EXEMPLU:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"
+                    + "\n\tDa ca ai nevoie de ajutor cu aceasta comanda sau celelalte, intra pe serverul de Discord al botului la "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
+            {"botLangSuccess", "Mi-ai schimbat limba cu succes."},
+            {"botLangUnsupported", "Acea limba nu este suportata."},
+            {"botStatistics", "%s Statistici"},
+            {"broadcasterLangAllSuccess", " :ok_hand: O sa ma uit pentru livestreamuri in toate limbile."},
+            {"broadcasterLangFail", "Ceva nu a mers si inca caut pentru toate limbile."},
+            {"broadcasterLangSuccess", " :ok_hand: O sa ma uit pentru livestreamuri doar in acea limba!"},
+            {"canNotRemoveOwner", "Prostutule, nu poti sterge ownerul de la manageri. :laughing: " +
                     ":laughing:"},
-            {"cleanupFail", "Ah, man...  Something went wrong... Better try that again."},
-            {"cleanupHelp", "# CLEANUP\n*  Change the way I clean up my stream announcements.\n\n## USAGE:"
+            {"cleanupFail", "Ah, Ceva nu a mers... Mai bine incearca dinnou."},
+            {"cleanupHelp", "# CLEANUP\n*  Schimba cum spun anunturile.\n\n## USAGE:"
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " cleanup <option>"
-                    + "\n\tnone   - I won't change a thing to my announcements! (default)"
-                    + "\n\tedit   - I'll edit my announcements to say \"OFFLINE\" when the streamer goes offline"
-                    + "\n\tdelete - I'll just delete the announcement when the streamer is no longer live"
+                    + "\n\tnone   - Nu voi face nimic! (default)"
+                    + "\n\tedit   - Voi spune \"OFFLINE\" cand livestreamul s-a terminat!"
+                    + "\n\tdelete - Voi sterge anuntul dupa ce livestreamul s-a terminat!"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit"},
-            {"cleanupSuccessDelete", "Sir, yes Sir!  I will delete all my announcements from now on!"},
-            {"cleanupSuccessEdit", "Editing my announcements, it is."},
-            {"cleanupSuccessNone", " :ok_hand: I won't do anything to my announcements."},
-            {"compactFail", "Um, something went wrong.  My compact mode is unchanged."},
-            {"compactHelp", "# COMPACT\n* Switch my announcements to a shorter version.\n\n## USAGE: "
+            {"cleanupSuccessDelete", "Voi sterge toate anunturile de acum incolo!"},
+            {"cleanupSuccessEdit", "Voi edita anunturile de acum incolo!"},
+            {"cleanupSuccessNone", " :ok_hand: Nu voi face nimic!"},
+            {"compactFail", "Um, Ceva nu a mers bine.  Modul meu compact nu s-a schimbat."},
+            {"compactHelp", "# COMPACT\n* Schimba cum sa arate anunturile mele.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\tnoEmbed    - Removes the large embed and only uses a short sentence."
-                    + "\n\tsmallEmbed - Announces with an embed with no large banner image."
-                    + "\n\tfullEmbed  - The full announcement with large banner image."
-                    + "\n\tvideoEmbed - No rich embed. Announcement will be a small code block and an embedded video " +
-                    "you can watch in Discord."
+                    + "\n\tnoEmbed    - Sterg totul si doar spun ca au inceput sa faca un livestream."
+                    + "\n\tsmallEmbed - Anunta cu incorporare fara banner."
+                    + "\n\tfullEmbed  - Anuntul full cu banner."
+                    + "\n\tvideoEmbed - O incorporare mica. Anuntul va fi un block cu coduri si un video " +
+                    "care il poti vedea direct prin Discord."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed"},
-            {"compactFullEmbed", " :compression: You will get the full announcement from now on."},
-            {"compactSmallEmbed", " :compression: You will get an announcement with a small embed from now on."},
-            {"compactNoEmbed", " :compression: Your announcements will only be a short sentence from now on."},
-            {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
-                    "Videos will be able to be played from Discord."},
+            {"compactFullEmbed", " :compression: Vei vedea anuntul full de acum incolo."},
+            {"compactSmallEmbed", " :compression: Vei vedea anuntul cu o incorporare mica de acum incolo."},
+            {"compactNoEmbed", " :compression: Nu vei vedea nici o incorporare doar o propozitie."},
+            {"compactVideoEmbed", " :compression: De acum incolo vei vedea acel video care il poti viziona prin  " +
+                    "Discord."},
             {"configHelp", "# CONFIG\n* The base command to set my various settings. Check each specific settings help for more info.\n\n" +
                     "# checkPerms\n\tCheck the permissions the bot needs in a particular text channel (#discordChannel is optional)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
