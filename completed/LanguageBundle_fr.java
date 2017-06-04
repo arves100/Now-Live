@@ -24,8 +24,8 @@ import com.nowlive.bot.util.Const;
 import java.util.ListResourceBundle;
 
 /**
- * @author <put your name here>
- * @version Spanish
+ * @author Piorrro33
+ * @version French
  */
 public class LanguageBundle_fr extends ListResourceBundle {
 
@@ -116,8 +116,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
                     "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* La commande à utiliser pour me paramétrer. Regarde l'aide de chaque paramètre pour comprendre son fonctionnement.\n\n" +
-                    "# checkPerms\n\tCheck the permissions the bot needs in a particular text channel (#discordChannel is optional)\n*\t" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
+                    "# checkPerms\n\tVérifie les permissions que le bot a besoin dans un salon spécifique. (#salonDiscord est optionnel)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #salonDiscord\n" +
                     "# defaultOfflineMessage\n\tRéinitialise le message hors-ligne (utilisé dans les annonces modifiées)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "# defaultOnlineMessage\n\tRéinitialise le message d'annonce (utilisé dans toutes les annonces)\n*\t" +
@@ -131,7 +131,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help\n" +
                     "# notify\n\tUtilisé pour changer les options de notifications globales du serveur.\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config notify help"},
-            {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
+            {"customMessageNotNull", "# Le message personnalisé ne peut être vide.  Désolé...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% est en live ! Regarde le stream ici : %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Réinitialiser le message hors-ligne.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
@@ -140,7 +140,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Message des développeurs " + Const.BOT_NAME + " :*\n\n\t"},
             {"discordChannelNoExist", "Ce salon n'existe pas sur ton serveur."},
-            {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
+            {"discordChannelNotNull", "# Je n'arrive pas à trouver ce salon textuel. Le stream sera annoncé dans le salon par défaut."},
             {"discordLink", "Tu souhaites rejoindre le serveur Discord Now Live ? Il est rempli de gens utiles si tu as " +
                     "besoin d'aide ! Clique ici :\n" + Const.DISCORD_URL},
             {"discordLinkHelp", "# Afficher le lien d'invitation pour rejoindre le serveur Discord Now Live."},
@@ -244,26 +244,15 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "\n\ttwitchTeam       - Liste les équipes Twitch suivies"
                     + "\n\tytgChannel       - Liste les chaînes YouTube Gaming suivies"
                     + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel"},
-            /* Please order listSettings like this then remove this comment.  NEW > Default announcement channel is: %s.
-            REMOVE THE ENGLISH listSettings AND REMOVE THE COMMENT TAGS WHEN DONE :)
-            {"listSettings", "# Bot Settings on Your Server" +
-                    "\n* Bot language is set to: %s." +
-                    "\n* Broadcaster language is set to: %s." +
-                    "\n* Cleanup is set to: %s." +
-                    "\n* Compact mode is set to: %s." +
-                    "\n* Current online announcement message format is: %s." +
-                    "\n* Current offline announcement message format is: %s." +
-                    "\n* Default announcement channel is: %s" +
-                    "\n* Notification is set to: %s."},
-            {"listSettings", "# Paramètres du bot sur le serveur" +
-                    "\n* Le mode compact est %s." +
-                    "\n* Les notifications sont sur %s." +
-                    "\n* Le nettoyage est en mode %s." +
-                    "\n* La langue de diffusion est sur %s." +
+            {"listSettings", "# Paramètres du bot sur ce serveur" +
                     "\n* La langue du bot est %s." +
+                    "\n* La langue de diffusion est : %s." +
+                    "\n* Le nettoyage est en mode %s." +
+                    "\n* Le mode compact est %s." +
                     "\n* Le format des annonces est actuellement : %s." +
-                    "\n* Le format du message hors-ligne est actuellement : %s."},*/
-            {"needOneManager", "Si tu supprimes celui-là, qui va me gérer ?"},
+                    "\n* Le format du message \"hors-ligne\" est actuellement : %s." +
+                    "\n* Les notifications sont sur %s."},
+            {"needOneManager", "Si tu supprimes celui-là, qui va me contrôler ?"},
             {"noBotManager", "C'est contre les lois de l'union des bots de Discord de laisser des bots me gérer. Désolé, essaie de trouver un " +
                     "humain approprié pour ce travail. :thumbsup:"},
             {"noneOnline", "Désolé mon pote, personne n'est en ligne en ce moment parmi les chaînes que je surveille."},
@@ -273,19 +262,19 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"notifyEveryone", ":tada: WOW !!  **TOUT LE MONDE** sur le serveur sera notifié quand j'annoncerai " +
                     "des streams !  *(Es-tu sûr ? Je ne le recommande pas aux grands serveurs... Cela peut " +
                     "énerver les gens.)*"},
-            {"notifyDeprecated", "# -nl notify is deprecated no longer being used.  Please use: -nl config notify"},
+            {"notifyDeprecated", "# -nl notify est obsolète et n'est plus utilisé.  Merci d'utiliser : -nl config notify"},
             {"notifyHelp", "# NOTIFY:\n*  Utilisé pour changer les options de notifications globales du serveur.\n\n## UTILISATION :  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " config notify <option>"
                     + "\n\tnone - Aucune mention @ de quelque sorte que ce soit. (par défaut)"
                     + "\n\there - Je préviendrai uniquement les personnes qui sont en ligne au moment de l'annonce"
                     + "\n\teveryone - Je préviendrai TOUT LE MONDE !! Mouahahaha !! (Je ne le recommande pas aux grands serveurs)"
-                    + "\n\t@<role>  - I will send an @ mention for the role of your choice"
-                    + "\n\t@<user>  - Want to notify a single user?  This is the option for you!"
+                    + "\n\t@<role>  - Je mentionnerai le rôle de votre choix"
+                    + "\n\t@<user>  - Vous voulez mentionner un seul utilisateur ?  C'est l'option que tu cherchais !"
                     + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " config notify everyone"},
             {"notifyHere", " :bellhop_bell: Tous ceux qui sont en ligne recevront une notification quand j'annoncerai un stream."},
-            {"notifyRoleUser", "# I will @ mention %s with every announcement"},
-            {"notifyTooMany", "# You can only notify one %s at a time!"},
-            {"notifyMultipleUsers", " If you want multiple users notified, create a role and have it notified."},
+            {"notifyRoleUser", "# Je mentionnerai %s dans chaque annonce."},
+            {"notifyTooMany", "# Vous ne pouvez mentionner qu'un %s à la fois !"},
+            {"notifyMultipleUsers", " Si vous voulez mentionner plusieurs utilisateurs, créez un rôle et ajoutez-le avec la commande **notify**."},
             {"notifyNone", " :ok_hand: Je ne mentionnerai plus personne dans mes annonces."},
             {"nowLive", "EN LIVE !\n"},
             {"nowPlayingEmbed", "Joue à"},
@@ -301,7 +290,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"oops", "Oups ! Quelque chose s'est mal passé et rien n'a été modifié ! Essayons encore."},
             {"patreon", "Si vous souhaitez faire un don aux développeurs, utilisez notre Patreon. https://www.patreon.com/nowlive"},
             {"patreonHelp", "# Retourne le lien vers notre Patreon."},
-            {"picartoChannelNotFound", "\n# Channel(s) not found on Picarto: %s."},
+            {"picartoChannelNotFound", "\n# Chaîne Picarto introuvable : %s."},
             {"picartoHelp", "# PICARTO\n* Modifier des paramètres spécifiques à Picarto.\n"
                     + "* Notes :\n\t"
                     + "Pour ajouter des filtres de titre, vous DEVEZ inclure les crochets.\n\t"
@@ -424,7 +413,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "Warcraft} (ajoute une chaîne à annoncer dans un certain salon et des filtres de jeu)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (ajoute un jeu au salon d'annonce global)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (ajoute une équipe dans le salon d'annonce #instinct-streamers)"},
-            {"staffOverride", "*Permission of this command have been overridden by a member of the bot staff.*"},
+            {"staffOverride", "*La permission de cette commande a été forcée par un membre du staff.*"},
             {"statusHelp", "# STATUS\n* Affiche diverses statistiques du bot.\n\n## UTILISATION :  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status"},
             {"streamlangHelp", "# STREAMLANG\n* Permet de filtrer les streams par la langue dans laquelle ils sont " +
