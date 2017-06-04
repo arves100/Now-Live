@@ -280,7 +280,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"nowPlayingEmbed", "Joue à"},
             {"nowPlayingLower", " est en train de jouer "},
             {"nowStreamingEmbed", " est en live !"},
-            {"numUniqueMembers", "Nombre de membres uniques"},
+            {"numUniqueMembers", "Nombre de membres"},
             {"offline", "HORS-LIGNE !\n"},
             {"offlineEmbed", " est maintenant hors-ligne !"},
             {"on", " dans l'équipe "},
