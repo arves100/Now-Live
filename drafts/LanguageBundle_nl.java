@@ -16,7 +16,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package com.nowlive.bot.langs;
+package drafts;
 
 import com.nowlive.bot.core.Config;
 import com.nowlive.bot.util.Const;
@@ -24,9 +24,10 @@ import com.nowlive.bot.util.Const;
 import java.util.ListResourceBundle;
 
 /**
- * @author Veteran Software by Ague Mort
+ * @author <put your name here>
+ * @version Dutch
  */
-public class LanguageBundle extends ListResourceBundle {
+public class LanguageBundle_nl extends ListResourceBundle {
 
     private Object[][] contents = {
             {"added", "Added "},

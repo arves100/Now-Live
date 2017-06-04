@@ -24,7 +24,8 @@ import com.nowlive.bot.util.Const;
 import java.util.ListResourceBundle;
 
 /**
- * @author Veteran Software by Ague Mort
+ * @author <put your name here>
+ * @version Spanish
  */
 public class LanguageBundle_fr extends ListResourceBundle {
 

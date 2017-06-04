@@ -23,18 +23,20 @@ Now Live is currently available in:
 * French
 * German
 * Greek
+* Italian
 * Russian
 * Spanish
+* Vietnamese
 
 Now Live has the following translations in progress:
 * Dutch (NL)
+* Estonian
 * Finnish
-* Italian
+* Indonesian
+* Polish
+* Romanian
 * Slovak
-* Vietnamese
-
-Now Live has a partial translation in:
-* Swedish (not live, needs to be finished first)
+* Swedish (translator stopped, needs new translator)
 
 ---
 ## Now Live has a Discord Server!
