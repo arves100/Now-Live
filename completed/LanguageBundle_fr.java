@@ -81,7 +81,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "n'hésitez pas à contacter nos traducteurs dans notre serveur. Le Discord est ici : " + Const.COMMAND_PREFIX + Const.COMMAND + "discord"},
             {"botLangSuccess", "Je parlerai désormais français."},
             {"botLangUnsupported", "Cette langue n'est pas encore supportée."},
-            {"botStatistics", "%s Statistiques"},
+            {"botStatistics", "Statistiques %s"},
             {"broadcasterLangAllSuccess", " :ok_hand: Je ne chercherai que des streams disponibles dans toutes les langues !"},
             {"broadcasterLangFail", "Quelque chose s'est mal passé, donc je continue à chercher des streams disponibles dans toutes les langues."},
             {"broadcasterLangSuccess", " :ok_hand: Je ne chercherai que des streams dans cette langue !"},
