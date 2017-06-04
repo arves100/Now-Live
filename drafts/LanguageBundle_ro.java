@@ -115,7 +115,7 @@ public class LanguageBundle_ro extends ListResourceBundle {
             {"compactNoEmbed", " :compression: Nu vei vedea nici o incorporare doar o propozitie."},
             {"compactVideoEmbed", " :compression: De acum incolo vei vedea acel video care il poti viziona prin  " +
                     "Discord."},
-            {"configHelp", "# CONFIG\n* The base command to set my various settings. Check each specific settings help for more info.\n\n" +
+            {"configHelp", "# CONFIG\n* Comanda pentru a schimba setarile mele. Uita-te cum sa folosesti fiecare pentru mai multe informatii.\n\n" +
                     "# checkPerms\n\tCheck the permissions the bot needs in a particular text channel (#discordChannel is optional)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
                     "# defaultOfflineMessage\n\tReturns the offline message to the default (used in edited announcements)\n*\t" +
