@@ -5,7 +5,7 @@
 
 ## Supported Platforms
 * Twitch
-* Beam
+* Mixer
 * YouTube Gaming
 * SmashCast (formerly HitBox)
 * Picarto
