@@ -24,7 +24,7 @@ import com.nowlive.bot.util.Const;
 import java.util.ListResourceBundle;
 
 /**
- * @author <put your name here>
+ * @author Corkysek
  * @version Czech
  */
 public class LanguageBundle_cs extends ListResourceBundle {
