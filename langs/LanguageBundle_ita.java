@@ -29,92 +29,90 @@ import java.util.ListResourceBundle;
 public class LanguageBundle extends ListResourceBundle {
 
     private Object[][] contents = {
-            {"added", "Added "},
-            {"addFail", "Failed to add "},
-            {"addHelp", "# ADD\n* Used to add managers for your server.\n\n## USAGE:  "
+            {"added", "Aggiunto "},
+            {"addFail", "Non è stato possibile aggiungerlo "},
+            {"addHelp", "# ADD\n* Viene utilizzato per aggiungere gestori al tuo server..\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " add <option> <content>"
                     + "\n\t<option> <content>"
-                    + "\n\tmanager - The @ mention of the user to add as a manager"
-                    + "\n\n## EXAMPLE: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague"},
-            {"adminOverride", "*Permission of this command have been overridden by a developer.*"},
-            {"alreadyExists", "It looks like you already added that to my database. ¯\\_(ツ)_/¯"},
-            {"alreadyManager", "It seems I've already hired that user as a manager.  Find moar humanz!"},
-            {"announceHelp", "# ANNOUNCE\n* Shhh...  I'm a secret...\n\n## USAGE:  "
+                    + "\n\gestore - Menziona con una @ l'utente da aggiungere come gestore"
+                    + "\n\n## ESEMPIO: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague"},
+            {"adminOverride", "*L'autorizzazione di questo comando è stato disabilitato da uno sviluppatore.*"},
+            {"alreadyExists", "Sembra che l'hai già aggiunto al mio database. ¯\\_(ツ)_/¯"},
+            {"alreadyManager", "Sembra che ho già aggiunto quell'utente come gestore.  Trova più persone!"},
+            {"announceHelp", "# ANNOUNCE\n* Shhh...  Sono un segreto...\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " announce <content>\n\tThis command is only available to the developers."},
-            {"mixerChannelNotFound", "\n# Channel(s) not found on Mixer: %s."},
-            {"mixerHelp", "# MIXER\n* Add and remove things that are Mixer.com related.\n"
-                    + "* Notes:\n\t"
-                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Mixer URL. It will not work!! Use only the channel name (www.mixer.com/channelName)\n\t"
-                    + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName\n\u200B\n"
-                    + "## Mixer Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional.\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Mixer Teams (Announce ALL live streams in the team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team teamName #announcementChannel\n\n"
-                    + "## Mixer Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Mixer\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Mixer Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Mixer\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "## Mixer Stream Stats\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer stats\n\n"
-                    + "* Examples:\n\t"
+                    + " announce <content>\n\tQuesto comando è disponibile solo agli sviluppatori."},
+		    {"mixerChannelNotFound", "\n# Canale/i non trovato/i su Mixer: %s."},
+            {"mixerHelp", "# Mixer\n* Aggiunto e rimuovi cose che sono collegate a mixer.com.\n"
+                    + "* Note:\n\t"
+                    + "Per aggiungere più filtri ai titoli e ai giochi, tu DEVI includere le parentesi.\n\t"
+                    + "NON utilizzare tutto l'URL di Mixer. Non funzionerà!! Utilizza solo il nome del canale (www.mixer.com/channelName)\n\t"
+                    + "5Tu puoi aggiungere più filtri di canali, team, giochi e titoli utilizzando la Barra Verticale | tra essi.\n\t"
+                    + "L'unica opzione richiesta è: channelName/teamName\n\n"
+                    + "## Canali Mixer\n"
+                    + "Nota: Aggiungere un filtro di canali, giochi e titoli da annunciare è opzionale."
+                    + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
+                    + "## Team di Mixer (Annuncia TUTTI gli streaming nel team)\n"
+                    + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team teamName #announcementChannel\n\n"
+                    + "## Filtri dei Giochi di Mixer (Globali)\n"
+                    + "* NOTA: Questo ha effetto su tutti gli stream annunciati connessi con Mixer\n"
+                    + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {gameName|gameName} #announcementChannel\n\n"
+                    + "## Fitri del Titolo di Mixer (Globali)\n"
+                    + "* NOTA: Questo ha effetto su tutti gli stream connessi con Mixer\n"
+                    + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Esempi:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
-            {"botLangFail", "Something went wrong and my language is still the same."},
-            {"botLangHelp", "# BOTLANG\n* Used to change the language of my responses.\n\n## USAGE: "
+                    + "Warcraft} (aggiungi un canale da annunciare entro certi canali e filtri di gioco)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (aggiungi un team con uno specifico canale dove annunciare)\n\n"},
+            {"botLangFail", "Qualcosa è andato storto e la mia lingua non è cambiata."},
+            {"botLangHelp", "# BOTLANG\n* Utilizzato per cambiare la lingua delle mie risposte.\n\n## UTILIZZO: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " botlang language"
                     + "\n\tEnter either the English spelling or the native spelling of the language you wish to set."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"
-                    + "\n\tIf you need further help with this command or others outside of what our help commands do and you wish to ask questions in a language currently associated "
-                    + "with the bot please feel free to reach out to our translators in our Discord for assistance. Discord is at " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
-            {"botLangSuccess", "You've successfully changed my language."},
-            {"botLangUnsupported", "That language is currently not supported."},
-            {"botStatistics", "%s Statistics"},
-            {"broadcasterLangAllSuccess", " :ok_hand: I'll look for streams from all languages."},
-            {"broadcasterLangFail", "Something went wrong and I'm still looking for all languages."},
-            {"broadcasterLangSuccess", " :ok_hand: I'll only look for streams that are in that language!"},
-            {"canNotRemoveOwner", "Silly human, you can't remove the server owner from the manager list. :laughing: " +
+                    + "\n\n## ESEMPIO:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"
+                    + "\n\tSe hai bisogno di altro aiuto con questo comando o altre cose al di fuori di che cosa i nostri comandi di aiuto elencano e vorresti fare una domanda nella lingua che hai associato "
+                    + "con il bot sentiti libero di chiedere ai nostri traduttori nel nostro Discord per assistenza. Il canale Discord è disponibile digitando il comando " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
+            {"botLangSuccess", "Hai cambiato con successo la mia lingua."},
+            {"botLangUnsupported", "Questa lingua non è attualmente supportata."},
+            {"botStatistics", "%s Statistiche"},
+            {"broadcasterLangAllSuccess", " :ok_hand: Controllerò tutti gli streaming per tutte le lingue."},
+            {"broadcasterLangFail", "Qualcosa è andato storto e continuerò a controllare gli streaming per tutte le lingue."},
+            {"broadcasterLangSuccess", " :ok_hand: Controllerò solo gli streaming in quella lingua!"},
+            {"canNotRemoveOwner", "Sciocco umano, non puoi rimuovere il possessore del server dalla lista dei gestori. :laughing: " +
                     ":laughing:"},
-            {"cleanupFail", "Ah, man...  Something went wrong... Better try that again."},
-            {"cleanupHelp", "# CLEANUP\n*  Change the way I clean up my stream announcements.\n\n## USAGE:"
+            {"cleanupFail", "Ah...  Qualcosa è andato storto... Meglio provare più tardi."},
+            {"cleanupHelp", "```Markdown\n# CLEANUP\n*  Cambia come pulisco i miei annunci di stream.\n\n## UTILIZZO:"
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " cleanup <option>"
-                    + "\n\tnone   - I won't change a thing to my announcements! (default)"
-                    + "\n\tedit   - I'll edit my announcements to say \"OFFLINE\" when the streamer goes offline"
-                    + "\n\tdelete - I'll just delete the announcement when the streamer is no longer live"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit"},
-            {"cleanupSuccessDelete", "Sir, yes Sir!  I will delete all my announcements from now on!"},
-            {"cleanupSuccessEdit", "Editing my announcements, it is."},
-            {"cleanupSuccessNone", " :ok_hand: I won't do anything to my announcements."},
-            {"compactFail", "Um, something went wrong.  My compact mode is unchanged."},
-            {"compactHelp", "# COMPACT\n* Switch my announcements to a shorter version.\n\n## USAGE: "
+                    + "\n\tnone   - Non cambierò nulla nei miei annunci! (predefinito)"
+                    + "\n\tedit   - Modificherò i miei annunci per dire \"OFFLINE\" quando lo streamer va offline"
+                    + "\n\tdelete - Mi limiterò a eliminare gli annunci quando lo streamer non è più in live"
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit" + "```"},
+            {"cleanupSuccessDelete", "Si signore! Eliminerò tutti i miei annunci da ora in poi!"},
+            {"cleanupSuccessEdit", "Modificherò i miei annunci..."},
+            {"cleanupSuccessNone", " :ok_hand: Non toccherò nulla nei miei annunci."},
+            {"compactFail", "Uhm, qualcosa è andato storto. La mia modalità compatta non è stata cambiata."},
+            {"compactHelp", "```Markdown\n# COMPACT\n* Cambia i miei annunci in una versione ridotta.\n\n## UTILIZZO: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\tnoEmbed    - Removes the large embed and only uses a short sentence."
-                    + "\n\tsmallEmbed - Announces with an embed with no large banner image."
-                    + "\n\tfullEmbed  - The full announcement with large banner image."
+                    + "\n\tnoEmbed    - Cambia i messaggi larghi in quelli corti."
+                    + "\n\tsmallEmbed - Annuncia i messaggi SENZA il banner del canale."
+                    + "\n\tfullEmbed  - Annuncia tutto CON il banner del canale."
                     + "\n\tvideoEmbed - No rich embed. Announcement will be a small code block and an embedded video " +
-                    "you can watch in Discord."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed"},
-            {"compactFullEmbed", " :compression: You will get the full announcement from now on."},
-            {"compactSmallEmbed", " :compression: You will get an announcement with a small embed from now on."},
-            {"compactNoEmbed", " :compression: Your announcements will only be a short sentence from now on."},
+                    "you can watch in Discord." // TRADUZIONE
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
+            {"compactFullEmbed", " :compression: Gli annunci saranno completi da ora in poi."},
+            {"compactSmallEmbed", " :compression: Gli annunci non conterranno il banner del canale da ora in poi."},
+            {"compactNoEmbed", " :compression: Gli annunci conterranno solo una piccola frase da ora in poi."},
             {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
-                    "Videos will be able to be played from Discord."},
-            {"configHelp", "# CONFIG\n* The base command to set my various settings. Check each specific settings help for more info.\n\n" +
+                    "Videos will be able to be played from Discord."}, // TRADUZIONE
+            {"configHelp", "# CONFIG\n* I comandi do base che impostano le mie varie impostazioni. Controlla ogni specifico aiuto per ogni impostazione per ricevere più informazoni.\n\n" +
                     "# checkPerms\n\tCheck the permissions the bot needs in a particular text channel (#discordChannel is optional)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
                     "# defaultOfflineMessage\n\tReturns the offline message to the default (used in edited announcements)\n*\t" +
