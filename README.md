@@ -5,7 +5,7 @@
 
 ## Supported Platforms
 * Twitch
-* Beam
+* Mixer
 * YouTube Gaming
 * SmashCast (formerly HitBox)
 * Picarto
@@ -23,18 +23,20 @@ Now Live is currently available in:
 * French
 * German
 * Greek
+* Italian
 * Russian
 * Spanish
+* Vietnamese
+* Romanian
 
 Now Live has the following translations in progress:
 * Dutch (NL)
+* Estonian
 * Finnish
-* Italian
+* Indonesian
+* Polish (translator stopped, needs new translator)
 * Slovak
-* Vietnamese
-
-Now Live has a partial translation in:
-* Swedish (not live, needs to be finished first)
+* Swedish (translator stopped, needs new translator)
 
 ---
 ## Now Live has a Discord Server!

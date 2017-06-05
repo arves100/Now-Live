@@ -24,7 +24,8 @@ import com.nowlive.bot.util.Const;
 import java.util.ListResourceBundle;
 
 /**
- * @author Veteran Software by Ague Mort
+ * @author Corkysek
+ * @version Czech
  */
 public class LanguageBundle_cs extends ListResourceBundle {
 
@@ -34,7 +35,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"addHelp", "# ADD\n* Používá se k přidání něčeho.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " add <volba> <obsah>"
+                    + " add <option> <content>"
                     + "\n\t<option> <content>"
                     + "\n\tmanager - Zmínka o uživateli znakem @ kterého chcete přidat jako manažera"
                     + "\n\n## EXAMPLE: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague"},
@@ -63,7 +64,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "## Mixer filtry názvů (Globální)\n"
                     + "* Poznámka: Toto ovlivňuje všechna oznámení pro Mixer\n"
                     + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [slovo|jiná slova|více slov] #oznamovacíKanál\n\n"
-                    + "## Mixer Stream Stats\n"
+                    + "## Mixer Stream Staty\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer stats\n\n"
                     + "* Příklady:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
@@ -88,7 +89,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"cleanupHelp", "# CLEANUP\n*  Změňte způsob kterým uklízím svoje oznámení.\n\n## USAGE:"
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " cleanup <volba>"
+                    + " cleanup <option>"
                     + "\n\tnone   - Nic nebudu měnit na mých oznámeních! (základní)"
                     + "\n\tedit   - Upravím svoje oznámení aby říkalo \"OFFLINE\" když je stream offline"
                     + "\n\tdelete - Odstraním oznámení když je stream offline"
@@ -100,7 +101,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"compactHelp", "# COMPACT\n* Zkrátí moje oznámení.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " compact <volba>"
+                    + " compact <option>"
                     + "\n\tnoEmbed    - Odstraní velké vložení a použije pouze krátkou větu."
                     + "\n\tsmallEmbed - Oznamuje se vložením bez velkého bannerového obrázku."
                     + "\n\tfullEmbed  - Celé oznámení s velkým bannerovým obrázkem."
@@ -462,7 +463,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {názevHry|názevHry} #oznamovacíKanál\n\n"
                     + "## Twitch filtry názvů (Globální)\n"
                     + "* Poznámka: Toto ovlivňuje všechna oznámení z Twtiche\n"
-                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #oznamovacíKanál\n\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [slovo|jiná slova|více slov] #oznamovacíKanál\n\n"
                     + "## Twitch Stream Stats\n"
                     + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\u200B\n"
                     + "* Příklady:\n\t"
@@ -494,10 +495,10 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "Jediná požadovaná možnostt je: názevKanálu\n\u200B\n"
                     + "## YouTube Gaming Kanály\n"
                     + "Poznámka: Přidání oznamovacího kanálu a filtrů názvů je volitelné."
-                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel názevKanálu #oznamovacíKanál [filtryNázvů]\n\n"
                     + "## YouTube Gaming filtry názvů (Globální)\n"
                     + "* POZNÁMKA: Toto ovlivňuje všechna oznámení z Youtube Gamingu\n"
-                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [slovo|jiná slova|více slov] #oznamovacíKanál\n\n"
                     + "## YouTube Gaming Stream Staty\n"
                     + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg stats\n\n"
                     + "* Příklady:\n\t"

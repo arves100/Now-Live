@@ -24,7 +24,8 @@ import com.nowlive.bot.util.Const;
 import java.util.ListResourceBundle;
 
 /**
- * @author Veteran Software by Ague Mort
+ * @author Серёга
+ * @version Russian
  */
 public class LanguageBundle_ru extends ListResourceBundle {
 
