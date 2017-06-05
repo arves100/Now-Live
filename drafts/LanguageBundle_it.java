@@ -105,7 +105,7 @@ public class LanguageBundle_it extends ListResourceBundle {
                     + "\n\tnoEmbed    - Cambia i messaggi larghi in quelli corti."
                     + "\n\tsmallEmbed - Annuncia i messaggi SENZA il banner del canale."
                     + "\n\tfullEmbed  - Annuncia tutto CON il banner del canale."
-                    + "\n\tvideoEmbed - No rich embed. Announcement will be a small code block and an embedded video " +
+                    + "\n\tvideoEmbed - No rich embed. Announcement will be a small code block and an embedded video " + // TRADUZIONE
                     "you can watch in Discord." // TRADUZIONE
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactFullEmbed", " :compression: Gli annunci saranno completi da ora in poi."},
@@ -113,7 +113,7 @@ public class LanguageBundle_it extends ListResourceBundle {
             {"compactNoEmbed", " :compression: Gli annunci conterranno solo una piccola frase da ora in poi."},
             {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
                     "Videos will be able to be played from Discord."}, // TRADUZIONE
-            {"configHelp", "# CONFIG\n* I comandi do base che impostano le mie varie impostazioni. Controlla ogni specifico aiuto per ogni impostazione per ricevere più informazoni.\n\n" +
+            {"configHelp", "# CONFIG\n* I comandi di base che impostano le mie varie impostazioni. Controlla ogni specifico aiuto per ogni impostazione per ricevere più informazoni.\n\n" +
                     "# checkPerms\n\tCheck the permissions the bot needs in a particular text channel (#discordChannel is optional)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
                     "# defaultOfflineMessage\n\tReturns the offline message to the default (used in edited announcements)\n*\t" +
@@ -127,110 +127,110 @@ public class LanguageBundle_it extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
                     "# setOnlineMessage\n\tSet a custom announcement message (used in all announcements)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help\n" +
-                    "# notify\n\tUsed to change the global notification option for this server.\n*\t" +
+                    "# notify\n\tUtilizzato per cambiare le opzioni di notifica globale per questo server.\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config notify help"},
-            {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
-            {"defaultAnnounceMessage", "%CHANNEL% has just gone live! Watch their stream here: %URL%"},
-            {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Reset my offline message to the default.\n\n" +
+            {"customMessageNotNull", "# Il messaggio personalizzato non può essere vuoto.  ¯\\_(ツ)_/¯"},
+            {"defaultAnnounceMessage", "%CHANNEL% ha appena iniziato una live! Guarda i suoi streaming qui: %URL%"},
+            {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Resetta il mio messaggio offline alle impostazioni predefinite.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
-            {"defaultOfflineMessage", "%CHANNEL% is no longer live!  Sorry, you missed them this time."},
-            {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Reset my online message to the default.\n\n" +
+            {"defaultOfflineMessage", "%CHANNEL% non è più in live!  Mi dispiace, questa volta l'hai mancato."},
+            {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Resetta il mio messaggio offline al messaggio predefinito.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
-            {"devMessage", "*Message from the " + Const.BOT_NAME + " developers:*\n\n\t"},
-            {"discordChannelNoExist", "That text channel doesn't exist on your server."},
-            {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
+            {"devMessage", "*Messaggio dagli sviluppatori di " + Const.BOT_NAME + ":*\n\n\t"},
+            {"discordChannelNoExist", "Questo canale testuale non esiste nel tuo server."},
+            {"discordChannelNotNull", "# Non riesco a trovare quel canale testuale. Gli streaming verranno annunciati nel canale predefinito."},
             {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
                     "having problems! Click this link:\n" + Const.DISCORD_URL},
             {"discordLinkHelp", "# Displays the link to join the Now Live Discord server."},
-            {"discordUserNoExist", "That person isn't a Discord user!  Try again!"},
+            {"discordUserNoExist", "Questa persona non è un utente di Discord! Riprova!"},
             {"doesNotExist", "That was never added to my database."},
             {"embedFull", "announcement with a full size embed"},
             {"embedSmall", "announce with a small embed"},
-            {"embedVideo", "announcement with a playable video"},
+            {"embedVideo", "Gli annunci includeranno un video guardabile"}, //REVISIONE
             {"embedNone", "announce with a just a small statement and no embed"},
-            {"emptyArgs", "I think you forgot some of the command.  Check the help command for more info."},
-            {"emptyCommand", "Next time you wake me up, please send a command as well."},
+            {"emptyArgs", "Penso che ti sei dimenticato qualcosa del comando.  Controlla l'aiuto per più informazioni."},
+            {"emptyCommand", "Quando ti svegli, per favore, inviami un comando."},
             {"followersEmbed", "Followers"},
-            {"followersEmbedYtg", "Subscribers"},
-            {"guildJoinSuccess", "Hi there!  I'm Now Live, the stream announcing bot!  Type `" +
+            {"followersEmbedYtg", "Iscritti"},
+            {"guildJoinSuccess", "Heyla! Sono Now Live, il bot che annuncia gli streaming!  Digita `" +
                     Const.COMMAND_PREFIX + Const.COMMAND +
-                    " help` for a list of my commands.\n\n" +
-                    "If you prefer that I speak in a different language, you should type `" +
+                    " help` per visionare la lista dei miei comandi.\n\n" +
+                    "Se preferisci che parlo in una lingua diversa, puoi digitare `" +
                     Const.COMMAND_PREFIX + Const.COMMAND +
-                    " botlang help` for more information on my available languages.\n\n" +
-                    "If you need some help setting me up, come join my Discord at " +
+                    " botlang help` per ricevere informazioni sulle mie lingue disponibili.\n\n" +
+                    "Se hai bisogno di qualche aiuto per impostarmi, entra nel mio server Discord: " +
                     Const.DISCORD_URL +
-                    " and check out the how-to-setup and command-list channels for all the info!\n\n" +
-                    "Don't forget to say hey!"},
-            {"helpPm", "* Hey there, %s! So I hear you're looking for some help? Here is a list of my commands.\n\n" +
+                    " e non dimenticarti di controllare i canali how-to-setup e command-line per tutte le informazioni!\n\n" +
+                    "Non dimenticarti di salutare!"},
+            {"helpPm", "* Hey tu, %s! Ho sentito che stai cercando aiuto, vero? Ecco una lista dei miei comandi.\n\n" + //REVISIONE
                     "# ADD\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
                     "# MIXER\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " mixer help\n\n" +
                     "# BOTLANG\n" +
-                    "* Currently supported languages: English, Czech, German, French, Spanish\n" +
-                    "* For more information, type: " +
+                    "* Lingue attualmente supportate Inglese, Ceco, Tedesco, Francese, Spagnolo\n" +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " botlang help\n\n" +
                     "# CLEANUP\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " cleanup help\n\n" +
                     "# COMPACT\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " compact help\n\n" +
                     "# CONFIG\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config help\n\n" +
                     "# INVITE\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " invite help\n\n" +
                     "# LIST\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " list help\n\n" +
                     "# PICARTO\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\u200B\n" +
                     "# PING\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
                     "# REMOVE\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " remove help\n\n" +
                     "# SMASHCAST\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " smashcast help\n\n" +
                     "# STREAMLANG\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streamlang help\n\n" +
                     "# STREAMS\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streams help\n\n" +
                     "# TWITCH\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
                     "# YOUTUBE GAMING\n" +
-                    "* For more information, type: " +
+                    "* Per ricevere più informazioni, digita: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ytg help\n\n" +
                     "# PATREON/DONATE\n" +
-                    "Gives the link to the bot's patreon. Commands are :\n" +
+                    "Visualizza il link alla pagina patreon del bot. I comandi sono :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
                     "# TRELLO/BUG/REQUEST\n" +
-                    "Gives the link to our Trello which is used for bug reports and feature requests. Commands are :\n" +
+                    "Visualizza il link alla nostra pagina Trello che è utilizzata per segnalare i bug e richiedere nuove funzionalità. I comandi sono :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " request\n" +
-                    "If you need additional help, join my Discord.  Lots of helpful people there:  " + Const.DISCORD_URL},
+                    "Se hai bisogno di altro aiuto, entra nel mio server Discord.  Tante persone ti aiuteranno li:  " + Const.DISCORD_URL},
             {"incorrectArgs", "You passed incorrect or missing arguments to me.  Check the help command for more info."},
-            {"invite", "Hey %s! Invite me to your server!\n\n\t"
-                    + "**Click here:** <https://discordapp.com/oauth2/authorize?&client_id="
+            {"invite", "Hey %s! Invitami nel tuo server!\n\n\t"
+                    + "**Clicca qui:** <https://discordapp.com/oauth2/authorize?&client_id="
                     + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8>"},
-            {"inviteHelp", "# INVITE\n* Used to display my invite link.\n\n## USAGE:  "
+            {"inviteHelp", "# INVITE\n* Utilizzato per visualizzare il mio link di invito.\n\n## UTILIZZO:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " invite\n\tInvite NowLive bot to your Discord Server."},
-            {"listHelp", "# LIST\n* This command lists things from the database.\n\n## USAGE:  "
+                    + " invite\n\tInvita il bot NowLive nel tuo Server di Discord."},
+            {"listHelp", "# LIST\n* This command lists things from the database.\n\n## UTILIZZO:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
                     + "\n\tmixerChannel     - Lists the Mixer Channels you follow"
                     + "\n\tmixerTeam        - Lists the Mixer Teams you follow"
@@ -248,25 +248,25 @@ public class LanguageBundle_it extends ListResourceBundle {
                     + "\n\ttwitchTeam       - Lists the Twitch teams you follow"
                     + "\n\tytgChannel       - Lists the YouTube Gaming Channels you follow"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel"},
-            {"listSettings", "# Bot Settings on Your Server" +
-                    "\n* Bot language is set to: %s." +
-                    "\n* Broadcaster language is set to: %s." +
-                    "\n* Cleanup is set to: %s." +
-                    "\n* Compact mode is set to: %s." +
-                    "\n* Current online announcement message format is: %s." +
-                    "\n* Current offline announcement message format is: %s." +
-                    "\n* Default announcement channel is: %s" +
-                    "\n* Notification is set to: %s."},
-            {"needOneManager", "If you remove that manager, who will manage me?"},
-            {"noBotManager", "It's against the Discord Bot Union By-Laws for bots to manage me. Sorry, try and find a " +
-                    "suitable human for the job. :thumbsup:"},
-            {"noneOnline", "Sorry %s, but there's nobody online right now that this server is following."},
-            {"notAManager", "Sorry, but only my managers can do that. Type `" + Const.COMMAND_PREFIX + Const.COMMAND +
-                    " list manager` for a list of people that can."},
+            {"listSettings", "# Impostazioni del Bot nel tuo Server" +
+                    "\n* La lingua del Bot è: %s." +
+                    "\n* La lingua degli Annunci è: %s." +
+                    "\n* La pulizia è impostata a: %s." +
+                    "\n* La modalità Compatta è impostata a: %s." +
+                    "\n* Il formato corrente dell'annuncio online è impostato a: %s." +
+                    "\n* Il formato corrente dell'annuncio offline è impostato a: %s." +
+                    "\n* Il canale di annunci predefinito è: %s" +
+                    "\n* Le notifiche sono impostate a: %s."},
+            {"needOneManager", "Se rimuovi quel gestori, chi mi gestirà??"},
+            {"noBotManager", "I bot non possono gestirmi, è contro la Discord Bot Union By-Laws farmi gestire dai bot. Per favore, trova un " +
+                    "umano adatto per questo lavoro. :thumbsup:"},
+            {"noneOnline", "Spiacente %s, ma al momento non c'è nessuno online che stà seguendo il server."},
+            {"notAManager", "Spiacente, ma solo i gestori possono farlo. Digita `" + Const.COMMAND_PREFIX + Const.COMMAND +
+                    " list manager` per la lista delle persone che potrebbero farlo."},
             {"notAnAdmin", "To whom it may concern:  I am your servant, but you are not my master."},
-            {"notifyEveryone", ":tada: WHOA!!  **EVERYONE** that belongs to the server will get notified when I " +
-                    "announce streams!  *(Are you sure?  I don't recommend this for large servers...  It can make " +
-                    "people grumpy.)*"},
+            {"notifyEveryone", ":tada: WHOA!!  **CHIUNQUE** che appartiene a questo server verrà notificato quando io " +
+                    "annuncio gli stream!  *(Ne sei veramente sicuro?  Non ti consiglio di farlo per server popolati...  Può rendere le " +
+                    "persone scontrose.)*"},
             {"notifyDeprecated", "# -nl notify is deprecated no longer being used.  Please use: -nl config notify"},
             {"notifyHelp", "# NOTIFY\n* Used to change the global notification option for this server.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " config notify <option>"
